@@ -43,7 +43,7 @@ table {
 }
 .bg-image{
     
-  background-image: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png');
+  background: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png') center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
