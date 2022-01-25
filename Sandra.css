@@ -1,0 +1,152 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+html{
+    background: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') center fixed no-repeat;
+    background-size: cover;
+}
+body {
+    
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    
+}
+.logo a{
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold; 
+    letter-spacing: 5px;
+    margin-left: 5px;
+}
+.menuoptions{
+    display: block;
+    text-align: center;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    background-color: rgba(134, 7, 123, 0.527);
+    position:absolute;
+    top: 35px;
+    cursor: pointer;
+    display: none;
+    transition: none 0.5s ease-in;
+    
+}
+.menuoptions li{
+    margin: 7px;
+}
+.menuoptions a{
+   
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.burger{
+    cursor: pointer;
+}
+.burger div{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(221, 221, 221);
+    margin: 5px;
+}
+.menuoptions-active{
+    display: block;
+}
