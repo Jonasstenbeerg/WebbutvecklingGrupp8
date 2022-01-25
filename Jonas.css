@@ -110,4 +110,27 @@ button:hover{
     opacity: 1;
     background-color: yellow;
 }
-
+@media (max-width: 850px){
+    .company-info li{
+        display: inline;
+    }
+    .company-info{
+        height: 97vh;
+    }
+}
+@media (max-width: 746px){
+    .company-info li{
+        display: inline;
+        
+    }
+    .company-info{
+        
+        height:30px;
+        align-items: flex-end;
+    }
+    .flex-forms{
+        
+        align-content: center;
+        position: 30px 30px;
+    }
+}
