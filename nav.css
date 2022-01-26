@@ -97,7 +97,7 @@ input, select {
     padding-bottom: 7px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow: hidden;
-    background-color: rgba(39, 30, 30, 0.658);
+    background-color: rgba(39, 38, 38, 0.658);
 }
 .logo a{
     color: rgb(221, 221, 221);
@@ -119,7 +119,7 @@ input, select {
     top: 57px;
     width: 100%;
     height: auto;
-    background-color: rgba(39, 30, 30, 0.658);
+    background-color: rgba(39, 38, 38, 0.658);
     cursor: pointer;
     display: none;
     transition: none 0.5s ease-in;   
