@@ -141,3 +141,9 @@ table {
         padding: 2%;
     }
 }
+@media (max-width: 380px){
+.flex-forms{
+    margin-left: 10%;
+    margin-right: 15%;
+}
+}
