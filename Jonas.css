@@ -82,7 +82,7 @@ table {
     opacity: .5;
 }
 #buttonstyle{
-    width: 60%;
+    width: 40%;
     background-color: rgb(52, 104, 146);
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -106,10 +106,7 @@ table {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 26px;
 }
-button:hover{
-    opacity: 1;
-    background-color: yellow;
-}
+
 @media (max-width: 850px){
     .company-info li{
         display: inline;
@@ -124,13 +121,31 @@ button:hover{
         
     }
     .company-info{
+        display: flex;
+        position: relative;
+        height: 10vh;
+        align-items: center;
         
-        height:30px;
-        align-items: flex-end;
+        justify-content: flex-start;
+        opacity: 1;
+        
     }
     .flex-forms{
-        
+        display: flex;
+        float: none;
         align-content: center;
-        position: 30px 30px;
+        position: relative;
+        margin-left: 3%;
+        margin-top: 10%;
+        
+        height: 80vh;
+    }
+    .flex-forms > *{
+    
+        margin-top: 10%;
+        
+        border-radius: 40px;
+        text-align: center;
+        padding: 2%;
     }
 }
