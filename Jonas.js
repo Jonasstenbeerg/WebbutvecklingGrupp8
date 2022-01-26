@@ -3,6 +3,14 @@ let results = [];
 const addResult = (ev)=>{
     //Säger åt knappen att inte submita direkt
     ev.preventDefault();
+    
+    var email = document.getElementById("email").value;
+    var errorElement = document.getElementById("error");
+    
+    var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    
+    if(email.match(pattern))
+    {
     let result = {
         name: document.getElementById('name').value,
         telephonenr: document.getElementById('telephonenr').value,
@@ -22,7 +30,8 @@ const addResult = (ev)=>{
 
     // //Spara till local storage
     localStorage.setItem('formResult', JSON.stringify(results) );
-    
+    errorElement.innerText = null;
+}
 }
 const dlInputs = ()=>{
 
@@ -52,7 +61,7 @@ const EmailValidation = ()=>{
     let input = []
     if(email.match(pattern))
     {
-        input.push("så ska det se ut");
+        input.push("RÄTT! så ska det se ut");
     }
     else
     {
