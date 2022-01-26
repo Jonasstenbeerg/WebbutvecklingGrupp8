@@ -7,8 +7,7 @@ const addResult = (ev)=>{
         name: document.getElementById('name').value,
         telephonenr: document.getElementById('telephonenr').value,
         email: document.getElementById('email').value,
-        gender: document.getElementById('male').value,
-        gender: document.getElementById('female').value,
+        Ok: document.getElementById('status').value,
         message: document.getElementById('message').value,
     }
     results.push(result);
@@ -42,4 +41,26 @@ const dlInputs = ()=>{
     a.click();
     URL.revokeObjectURL(href);
     a.remove();
+}
+const EmailValidation = ()=>{
+    
+    var form = document.getElementById("form");
+    var email = document.getElementById("email").value;
+    var errorElement = document.getElementById("error");
+        // var text = document.getElementById("text");
+    
+    var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+
+    let input = []
+    if(email.match(pattern))
+    {
+        input.push("så ska det se ut");
+    }
+    else
+    {
+        input.push("Fel! namn@exempel.se");
+        
+    }
+    errorElement.innerText = input;
+    
 }
