@@ -112,7 +112,7 @@ table {
         display: inline;
     }
     .company-info{
-        height: 97vh;
+        height: 95vh;
     }
 }
 @media (max-width: 746px){
@@ -137,8 +137,7 @@ table {
         position: relative;
         margin-left: 3%;
         margin-top: 10%;
-        
-        height: 80vh;
+        height: 75vh;
     }
     .flex-forms > *{
     
