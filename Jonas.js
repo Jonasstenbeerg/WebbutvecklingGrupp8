@@ -44,10 +44,8 @@ const dlInputs = ()=>{
 }
 const EmailValidation = ()=>{
     
-    var form = document.getElementById("form");
     var email = document.getElementById("email").value;
     var errorElement = document.getElementById("error");
-        // var text = document.getElementById("text");
     
     var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
