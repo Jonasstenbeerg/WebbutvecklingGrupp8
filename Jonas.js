@@ -18,6 +18,6 @@ const addResult = (ev)=>{
         
 
     // //Spara till local storage
-    // localStorage.setItem('formResult', JSON.stringify(results) );
+    localStorage.setItem('formResult', JSON.stringify(results) );
     
 }
