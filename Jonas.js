@@ -5,7 +5,11 @@ const addResult = (ev)=>{
     ev.preventDefault();
     let result = {
         name: document.getElementById('name').value,
-        question: document.getElementById('question').value,
+        telephonenr: document.getElementById('telephonenr').value,
+        email: document.getElementById('email').value,
+        gender: document.getElementById('male').value,
+        gender: document.getElementById('female').value,
+        message: document.getElementById('message').value,
     }
     results.push(result);
     //resetar formsen och lägger till result i arrayen results
