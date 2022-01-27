@@ -18,14 +18,14 @@
         <input type="text" id="name" required placeholder="Name" /> 
         <input type="text" id="telephonenr" required placeholder="TelephoneNumber" /> 
         <input type="text" id="email" required onkeydown="EmailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/><div id="error"></div> 
-        <div>
+        <div class="checkboxpos">
             
             <label for="status">ok</label>
             <input type="checkbox" name="status" id="status">
         </div>
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message here"></textarea>
         
-        <span>
+        <span class="contactbuttons">
             <button type="submit">Submit</button>
             <button type="button" onclick="dlInputs();">Download Inputs</button>
         </span>

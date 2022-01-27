@@ -74,22 +74,48 @@ table {
 .flex-forms textarea{
     border-radius: 4px;
 }
-
+#error
+{
+    height: 20px;
+    margin-top: 2%;
+    padding: 0%;
+}
+#message
+{
+    margin-top: auto;
+    height: 75px;
+}
 #textbox{
     font-size: 36px;
     font-family: Georgia, serif;
+}
+.checkboxpos
+{
+    padding: 0%;
+    
+    
 }
 .boxstyle {
     background-color: #000;
     color: #fff;
     opacity: .5;
 }
-#buttonstyle{
-    width: 40%;
+.contactbuttons
+{
+margin-top: 10px ;
+margin-bottom: 10px;
+display: flex;
+width: 180px;
+justify-content: space-between;
+}
+.contactbuttons > *{
+    width: 80px;
+    height: 40px;
     background-color: rgb(52, 104, 146);
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    border-radius: 10px;
 }
 .company-info{
     display: flex;
@@ -112,9 +138,6 @@ table {
 .flex-forms div{
 margin-top: 1%;
 }
-
-
-
 
 @media (max-width: 768px){
     .company-info li{
@@ -154,12 +177,4 @@ margin-top: 1%;
     margin-left: 10%;
     margin-right: 15%;
 }
-}
-span > *{
-    width: 45%;
-    background-color: rgb(52, 104, 146);
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
 }
