@@ -54,39 +54,66 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 75vh;
     justify-content: center;
-    margin-right: 3%;
-    margin-top: 15%;
+    margin-right: 8%;
+    margin-top: 10%;
     border-radius: 5%;
     padding-left: 3%;
     padding-right: 3%;
 
 }
 .flex-forms > *{
-    
     margin-top: 10%;
-    
     border-radius: 40px;
     text-align: center;
     padding: 3%;
 }
-
+.flex-forms textarea{
+    border-radius: 4px;
+}
+#error
+{
+    height: 20px;
+    margin-top: 2%;
+    padding: 0%;
+}
+#message
+{
+    margin-top: auto;
+    height: 120px;
+}
 #textbox{
     font-size: 36px;
     font-family: Georgia, serif;
+}
+.checkboxpos
+{
+    padding: 0%;
+    
+    
 }
 .boxstyle {
     background-color: #000;
     color: #fff;
     opacity: .5;
 }
-#buttonstyle{
-    width: 60%;
+.contactbuttons
+{
+margin-top: 10px ;
+margin-bottom: 10px;
+display: flex;
+width: 180px;
+justify-content: space-between;
+}
+.contactbuttons > *{
+    width: 80px;
+    height: 40px;
     background-color: rgb(52, 104, 146);
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
+    border-radius: 10px;
 }
 .company-info{
     display: flex;
@@ -106,8 +133,58 @@ table {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 26px;
 }
-button:hover{
-    opacity: 1;
-    background-color: yellow;
+.flex-forms div{
+margin-top: 1%;
 }
 
+@media (max-width: 768px){
+    #message
+{
+    height: 100px;
+}
+    .bg-image
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company-info li{
+        display: inline;
+        
+    }
+    .company-info{
+        display: flex;
+        position: relative;
+        height: 10vh;
+        align-items: center;
+        justify-content: flex-end;
+        opacity: 1;
+        
+    }
+    .flex-forms{
+        width: 400px;
+        display: flex;
+        float: none;
+        align-content: center;
+        position: relative;
+        /* margin-left: 20%; */
+        /* margin-right: 25%;  */
+        margin-top: 57px;
+        height: 75vh;
+        padding-left: 22.488px;
+        padding-right: 22.488px;
+    }
+    .flex-forms > *{
+    
+        margin-top: 5%;
+        border-radius: 40px;
+        text-align: center;
+        padding: 2%;
+    }
+}
+@media (max-width: 380px){
+.flex-forms{
+    /* margin-left: 10%; */
+    margin-right: 15%;
+}
+}
