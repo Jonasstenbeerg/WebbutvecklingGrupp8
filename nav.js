@@ -12,6 +12,7 @@
         </div>\
         <div class="menuoptions">\
             <div><a href="Portfolio.html">Portfolio</a></div>\
+            <div><a href="#">Employees</a></div>\
             <div><a href="Contact.html">Contact</a></div>\
         </div>\
     </div>\

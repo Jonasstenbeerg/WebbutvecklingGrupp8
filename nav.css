@@ -137,6 +137,9 @@ input, select {
     font-weight: bold;
     cursor: pointer;
 }
+.menuoptions a:hover{
+    color: rgb(129, 250, 73);
+}
 .burger{
     padding: 7px;
     cursor: pointer;
@@ -167,10 +170,33 @@ input, select {
     .menuoptions{
         position: absolute;
         display: flex;
-        justify-content: center;  
+        justify-content: flex-start;
+        padding-left: 200px;  
         background: transparent;
         left: 150px;
         top: 7px;
+    }
+    .menuoptions a{
+        position: relative;
+    }
+    .menuoptions a:hover{
+        color: rgb(233, 230, 230);
+    }
+    .menuoptions a::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: -5px;
+        left: 0;
+        background-color: rgb(129, 250, 73);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+    .menuoptions a:hover::before{
+        transform:scaleX(1);
     }
     
 }
