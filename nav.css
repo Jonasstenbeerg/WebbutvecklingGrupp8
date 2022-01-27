@@ -92,13 +92,12 @@ hr {
 input, select {
     vertical-align:middle;
 }
-
-.navmenu{
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow: hidden;
+.topmenu{
     background-color: rgba(39, 38, 38, 0.658);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navmenu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .logo a{
@@ -118,9 +117,9 @@ input, select {
     align-content: center;
 }
 .menuoptions{
-    position: absolute;
     text-align: center;
-    top: 54px;
+    left: 0%;
+    top: 40px;
     width: 100%;
     height: auto;
     background-color: rgba(39, 38, 38, 0.658);
@@ -149,22 +148,28 @@ input, select {
     margin: 4px;
 }
 .menuoptions-active{
+    position: absolute;
     display: block;
 }
 @media only screen and (min-width: 768px) {
-    .navmenu{
+    .topmenu{
+        position: relative;
         background: none;
+        overflow: hidden;
     }
     .burger{
         display: none;
     }
     .flexcontainer{
+        width: auto;
         float: left;
     }
     .menuoptions{
+        position: absolute;
         display: flex;
-        justify-content: center;
+        justify-content: center;  
         background: transparent;
+        left: 150px;
         top: 7px;
     }
     

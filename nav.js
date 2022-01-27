@@ -1,9 +1,10 @@
     var html = 
-    '<nav class="navmenu">\
+    '<header class="topmenu">\
     <div class="flexcontainer">\
-        <div class="logo">\
-        <a href="Index.html">Home</a>\
-        </div>\
+    <div class="logo">\
+    <a href="Index.html">Home</a>\
+    </div>\
+    <nav class="navmenu">\
         <div class="burger">\
             <div class="line1"></div>\
             <div class="line2"></div>\
