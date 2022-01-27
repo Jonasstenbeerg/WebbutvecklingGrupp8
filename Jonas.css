@@ -64,9 +64,7 @@ table {
 
 }
 .flex-forms > *{
-    
     margin-top: 10%;
-    
     border-radius: 40px;
     text-align: center;
     padding: 3%;
@@ -83,7 +81,7 @@ table {
 #message
 {
     margin-top: auto;
-    height: 75px;
+    height: 120px;
 }
 #textbox{
     font-size: 36px;
@@ -140,6 +138,16 @@ margin-top: 1%;
 }
 
 @media (max-width: 768px){
+    #message
+{
+    height: 100px;
+}
+    .bg-image
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .company-info li{
         display: inline;
         
@@ -154,15 +162,17 @@ margin-top: 1%;
         
     }
     .flex-forms{
+        width: 400px;
         display: flex;
         float: none;
         align-content: center;
         position: relative;
-        margin-left: 25%;
-        margin-right: 25%;
+        /* margin-left: 20%; */
+        /* margin-right: 25%;  */
         margin-top: 57px;
         height: 75vh;
-        
+        padding-left: 22.488px;
+        padding-right: 22.488px;
     }
     .flex-forms > *{
     
@@ -174,7 +184,7 @@ margin-top: 1%;
 }
 @media (max-width: 380px){
 .flex-forms{
-    margin-left: 10%;
+    /* margin-left: 10%; */
     margin-right: 15%;
 }
 }
