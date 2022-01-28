@@ -185,14 +185,13 @@ margin-top: 1%;
         
     }
     .flex-forms{
-        width: 400px;
+        width: 300px;
         display: flex;
         float: none;
         align-content: center;
-        position: relative;
         margin-left: 8%;
-        margin-top: 57px;
-        height: 75vh;
+        margin-top: 120px;
+        height: 69vh;
         padding-left: 22.488px;
         padding-right: 22.488px;
     }
@@ -206,7 +205,7 @@ margin-top: 1%;
 }
 @media (max-width: 380px){
 .flex-forms{
-    /* margin-left: 10%; */
-    margin-right: 15%;
+    
+    width: auto;
 }
 }
