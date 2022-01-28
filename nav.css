@@ -192,11 +192,9 @@ input, select {
         left: 0;
         background-color: rgb(129, 250, 73);
         transform: scaleX(0);
-        transform-origin: center;
         transition: transform 0.3s ease;
     }
     .menuoptions a:hover::before{
         transform:scaleX(1);
-    }
-    
+    }  
 }
