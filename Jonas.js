@@ -51,7 +51,7 @@ const dlInputs = ()=>{
     URL.revokeObjectURL(href);
     a.remove();
 }
-const EmailValidation = ()=>{
+const emailValidation = ()=>{
     
     var email = document.getElementById("email").value;
     var errorElement = document.getElementById("error");
