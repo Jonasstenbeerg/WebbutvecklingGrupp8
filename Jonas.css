@@ -47,6 +47,7 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: hidden;
     
 }
 .flex-forms{
@@ -57,7 +58,7 @@ table {
     height: 75vh;
     justify-content: center;
     margin-right: 8%;
-    margin-top: 10%;
+    margin-top: 8%;
     border-radius: 5%;
     padding-left: 3%;
     padding-right: 3%;
@@ -83,6 +84,14 @@ table {
     margin-top: auto;
     height: 120px;
 }
+#form
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 #textbox{
     font-size: 36px;
     font-family: Georgia, serif;
@@ -117,12 +126,15 @@ justify-content: space-between;
 }
 .company-info{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: flex-end;
-    height: 90vh;
+    height: 50px;
     color: white;
     margin-left: 5%;
     opacity: .5;
+    margin-bottom: 30px;
+ 
 }
 
 .company-info li{
@@ -142,11 +154,17 @@ margin-top: 1%;
 {
     height: 100px;
 }
+#form
+{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+}
     .bg-image
     {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
     }
     .company-info li{
         display: inline;
@@ -167,8 +185,7 @@ margin-top: 1%;
         float: none;
         align-content: center;
         position: relative;
-        /* margin-left: 20%; */
-        /* margin-right: 25%;  */
+        margin-left: 8%;
         margin-top: 57px;
         height: 75vh;
         padding-left: 22.488px;
