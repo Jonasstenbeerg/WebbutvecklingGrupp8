@@ -17,7 +17,7 @@
 <body>
     <nav id="navmenu"></nav>
     
-    <form id="form" onsubmit="addResult(event)">
+    <form id="form">
     
     <div class="company-info">
         <i id="company-info-textstyle">Company Info</i>
@@ -41,7 +41,7 @@
         <textarea name="message" id="message" cols="30" rows="10" placeholder="Message here"></textarea>
         
         <span class="contactbuttons">
-            <button type="submit">Submit</button>
+            <button type="button" onclick="addResult()">Submit</button>
             <button type="button" onclick="dlInputs();">Download Inputs</button>
         </span>
     
