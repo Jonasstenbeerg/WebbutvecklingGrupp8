@@ -1,8 +1,8 @@
 
 let results = [];
-const addResult = (ev)=>{
+const addResult = ()=>{
     //Säger åt knappen att inte submita direkt
-    ev.preventDefault();
+    // ev.preventDefault();
     
     var email = document.getElementById("email").value;
     var errorElement = document.getElementById("error");
@@ -21,12 +21,6 @@ const addResult = (ev)=>{
     results.push(result);
     //resetar formsen och lägger till result i arrayen results
     document.querySelector('form').reset();
-
-    // var blob = new Blob([results],
-    //     {type: "text/plain;charset=utf-8"}
-    // );
-
-        
 
     // //Spara till local storage
     localStorage.setItem('formResult', JSON.stringify(results) );
@@ -62,12 +56,14 @@ const emailValidation = ()=>{
     if(email.match(pattern))
     {
         input.push("RÄTT! så ska det se ut");
+        errorElement.style.color = "green";
+
     }
     else
     {
         input.push("Fel! namn@exempel.se");
-        
+        errorElement.style.color = "red";
     }
-    errorElement.innerText = input;
     
+    errorElement.innerText = input;
 }

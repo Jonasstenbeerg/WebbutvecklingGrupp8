@@ -176,13 +176,14 @@ input, select {
         left: 150px;
         top: 0px;
     }
-    .menuoptions a{
+    .menuoptions a {
         position: relative;
-    }
-    .menuoptions a:hover{
+        
+      }
+      .menuoptions a:hover {
         color: rgb(233, 230, 230);
-    }
-    .menuoptions a::before{
+      }
+      .menuoptions a::before {
         content: "";
         position: absolute;
         display: block;
@@ -193,8 +194,8 @@ input, select {
         background-color: rgb(129, 250, 73);
         transform: scaleX(0);
         transition: transform 0.3s ease;
-    }
-    .menuoptions a:hover::before{
+      }
+      .menuoptions a:hover::before {
         transform:scaleX(1);
-    }  
+      }
 }
