@@ -72,16 +72,18 @@ position: relative;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    background: transparent;
     border: 0;
+    cursor: pointer;
 }
 .carousel__button--left {
-    left: -40px;
+    right: -40px;
 }
 .carousel__button--right {
     right: -40px;
 }
 .carousel__button img {
-    width: 12px;
+    width: 40px;
 }
 .carousel__nav {
     background: pink;
