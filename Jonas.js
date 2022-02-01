@@ -168,12 +168,27 @@ dotsNav.addEventListener('click', e => {
 var counter = 1;
 setInterval(function(){
     const currentSlide = track.querySelector('.current-slide');
-    const nextSlide = currentSlide.nextElementSibling;
     const currentDot = dotsNav.querySelector('.current-slide');
-    const nextDot = currentDot.nextElementSibling;
+    var nextSlide;
+    var nextDot;
+    
+    if(currentSlide===slides[4]){
+        slides[4].classList.remove('current-slide');
+        slides[0].classList.add('current-slide');
+        nextSlide = slides[0];
+        nextDot = slides[0];
+    }
+    else 
+    {
+        nextSlide = currentSlide.nextElementSibling;
+        nextDot = currentDot.nextElementSibling;
+    }
+    
     const nextIndex = slides.findIndex(slide => slide === nextSlide)
     
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
+    
+
 }, 5000)
