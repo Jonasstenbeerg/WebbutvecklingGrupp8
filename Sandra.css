@@ -1,3 +1,5 @@
+/*---------------------------CSS reset------------------------------*/
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -139,12 +141,12 @@ input, select {
     margin: 20px 0px;
     text-align: center;
 }
-.projectinfo-1, .projectinfo-2{
+.projectinfo-1 h1, .projectinfo-2 h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     padding: 10px;
 }
-.projectinfo-1, .projectinfo-2{
+.projectinfo-1 p, .projectinfo-2 p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     padding: 0px 20px;
@@ -153,8 +155,8 @@ input, select {
 .slideShow1, .slideShow2{
     width: 80%;
     height: auto;
-    padding: 20px 20px;
 }
+
 /*-------------------------------------------------------------------------*/
 
 /*-----------------------------Index.html--------------------------------*/
@@ -301,6 +303,8 @@ input, select {
 }
 /*-------------------------------------------------------------------------*/
 
+/*--------------------------------Media querys------------------------------*/
+
 @media screen and (min-width: 380px) {
     .portfolioHeadInfo h1{
         font-size: 35px;
@@ -379,11 +383,11 @@ input, select {
     .menuoptions a {
         position: relative;
         
-      }
-      .menuoptions a:hover {
+    }
+    .menuoptions a:hover {
         color: rgb(233, 230, 230);
-      }
-      .menuoptions a::before {
+    }
+    .menuoptions a::before {
         content: "";
         position: absolute;
         display: block;
@@ -394,13 +398,12 @@ input, select {
         background-color: rgb(129, 250, 73);
         transform: scaleX(0);
         transition: transform 0.3s ease;
-      }
-      .menuoptions a:hover::before {
+    }
+    .menuoptions a:hover::before {
         transform:scaleX(1);
-      }
+    }
     /*---------------------------------------------------------------------------*/
 
-    /*--------------------------------Media querys------------------------------*/
 
 }
 @media screen and (min-width: 1300px) {
