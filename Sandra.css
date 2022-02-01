@@ -405,10 +405,10 @@ input, select {
     .projectinfo-1,.projectinfo-2{
         padding: 10px 50px;
     }
-    .projectinfo-1, .projectinfo-2{
+    .projectinfo-1 h1, .projectinfo-2 h1{
         font-size: 27px;
     }
-    .projectinfo-1, .projectinfo-2{
+    .projectinfo-1 p, .projectinfo-2 p{
         font-size: 21px;
     }
     .slideShow1, .slideShow2{
