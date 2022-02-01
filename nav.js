@@ -1,7 +1,7 @@
     var html = 
     '<header class="topmenu">\
-    <div class="flexcontainer">\
-    <div class="logo">\
+    <div class="navflexcontainer">\
+    <div class="homelogo">\
     <a href="Index.html">Home</a>\
     </div>\
     <nav class="navmenu">\

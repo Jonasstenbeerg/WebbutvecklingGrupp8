@@ -7,3 +7,15 @@ const navDrop = () => {
     })
 }
 navDrop();
+
+const navflexcontainer = document.querySelector('.navflexcontainer');
+
+window.onscroll = function(){
+    var top = window.scrollY;
+    if(top > 100){
+        navflexcontainer.classList.add('scrolled');
+    }
+    else{
+        navflexcontainer.classList.remove('scrolled');
+    }
+};
