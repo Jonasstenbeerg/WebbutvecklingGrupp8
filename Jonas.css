@@ -77,7 +77,7 @@ position: relative;
     cursor: pointer;
 }
 .carousel__button--left {
-    right: -40px;
+    left: -40px;
 }
 .carousel__button--right {
     right: -40px;
