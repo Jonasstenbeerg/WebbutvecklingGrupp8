@@ -1,7 +1,7 @@
 const navDrop = () => {
     const burger = document.querySelector('.burger');
     const menuOptions = document.querySelector('.menuoptions')
-    const links = document.querySelectorAll('.menuoptions a');
+    const links = document.querySelectorAll('.menuoptions a,i');
 
     burger.addEventListener('click',() => {
         menuOptions.classList.toggle('menuoptions-active');

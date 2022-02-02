@@ -11,11 +11,14 @@
             <div class="line3"></div>\
         </div>\
         <div class="menuoptions">\
-            <div><a href="Portfolio.html">Portfolio</a></div>\
-            <div><a href="#">Employees</a></div>\
-                <div><a id="subMenu" href="#">Jonas</a></div>\
-                <div><a id="subMenu" href="#">Sandra</a></div>\
-            <div><a href="Contact.html">Contact</a></div>\
+        <ul class="links">\
+            <li><a href="Portfolio.html">Portfolio</a></li>\
+            <li><a href="#">Employees<i class="bx bx-chevron-down"></i></a>\
+                <li><a id="subMenu" href="#">Jonas</a></li>\
+                <li><a id="subMenu" href="#">Sandra</a></li>\
+            </li>\
+            <li><a href="Contact.html">Contact</a></li>\
+        </ul>\
         </div>\
     </div>\
 </nav>';

@@ -272,11 +272,13 @@ input, select {
     background-color: rgba(39, 38, 38, 0.658);
     display: none;
 }
-.menuoptions div{
+.menuoptions .links{
+    display: flex;
+    flex-direction: column;
     margin: 8px;
     font-size: 20px;
 }
-.menuoptions a{
+.menuoptions a, .menuoptions i{
     text-decoration: none;
     color: rgb(233, 230, 230);
     text-transform: uppercase;
@@ -398,14 +400,24 @@ input, select {
         position: absolute;
         display: flex;
         justify-content: flex-start;
-        padding-left: 200px;  
+        padding-left: 180px;  
         background: transparent;
         left: 150px;
         top: 0px;
     }
-    .menuoptions a {
+    .menuoptions .links{
+        display: flex;
+        flex-direction: row;
+    }
+    .menuoptions li{
+        padding: 0px 10px;
+    }
+    .menuoptions a,.menuoptions i {
         position: relative;
         opacity: 1;
+    }
+    .bx{
+        line-height: 0;
     }
     .menuoptions #subMenu{
         display: none;
