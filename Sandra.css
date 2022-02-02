@@ -165,7 +165,7 @@ input, select {
     background: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center fixed no-repeat;
     background-size: cover;
 }
-.container{
+.indexContainer{
     min-height: 90vh;
     margin: 0%;
     display: flex;
@@ -174,13 +174,13 @@ input, select {
     justify-content: center;
     font-family:Helvetica, Arial, sans-serif;
 }
-.headtext{
+.indexHeadtext{
     font-size: 45px;
     color: rgba(0, 255, 55, 0.918);
     margin: 20px;
     text-align: center;
 }
-.infotext{
+.indexInfotext{
     font-size: 30px;
     color: rgb(224, 250, 250);
     margin: 20px;
@@ -197,7 +197,7 @@ input, select {
     color: rgb(238, 244, 245);
 }
 
-.footer{
+.indexFooter{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -271,18 +271,20 @@ input, select {
     height: auto;
     background-color: rgba(39, 38, 38, 0.658);
     display: none;
-    transition: none 0.5s ease-in;   
 }
-.menuoptions div{
+.menuoptions .links{
+    display: flex;
+    flex-direction: column;
     margin: 8px;
     font-size: 20px;
 }
-.menuoptions a{
+.menuoptions a, .menuoptions i{
     text-decoration: none;
     color: rgb(233, 230, 230);
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    opacity: 0;
 }
 .menuoptions a:hover{
     color: rgb(129, 250, 73);
@@ -296,10 +298,33 @@ input, select {
     height: 3px;
     background-color: rgb(221, 221, 221);
     margin: 4px;
+    transition: 0.5s;
 }
 .menuoptions-active{
     position: absolute;
     display: block;
+}
+.cross .line1{
+    -webkit-transform: rotate(-45deg) translate(-5px,5px);
+    transform: rotate(-45deg) translate(-5px,5px);
+    background-color: rgb(206, 123, 16);
+}
+.cross .line2{
+    opacity: 0;
+}
+.cross .line3{
+    -webkit-transform: rotate(45deg) translate(-5px,-5px);
+    transform: rotate(45deg) translate(-5px,-5px);
+    background-color: rgb(206, 123, 16);
+}
+
+@keyframes linksFade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 /*-------------------------------------------------------------------------*/
 
@@ -310,10 +335,10 @@ input, select {
         font-size: 35px;
     }
     
-    .headtext{
+    .indexHeadtext{
         font-size: 50px;
     }
-    .infotext{
+    .indexInfotext{
         font-size: 35px;
         padding-bottom: 15%;
         padding-right: 9%;
@@ -341,14 +366,14 @@ input, select {
     .projectinfo-1 p, .projectinfo-2 p{
         font-size: 15px;
     }
-    .container{
+    .indexContainer{
         margin-left: 10%;
         margin-right: 10%;
     }
-    .headtext{
+    .indexHeadtext{
         font-size: 60px;
     }
-    .infotext{
+    .indexInfotext{
         font-size: 45px;
         padding-bottom: 15%;
         padding-right: 9%;
@@ -375,14 +400,27 @@ input, select {
         position: absolute;
         display: flex;
         justify-content: flex-start;
-        padding-left: 200px;  
+        padding-left: 180px;  
         background: transparent;
         left: 150px;
         top: 0px;
     }
-    .menuoptions a {
+    .menuoptions .links{
+        display: flex;
+        flex-direction: row;
+    }
+    .menuoptions li{
+        padding: 0px 10px;
+    }
+    .menuoptions a,.menuoptions i {
         position: relative;
-        
+        opacity: 1;
+    }
+    .bx{
+        line-height: 0;
+    }
+    .menuoptions #subMenu{
+        display: none;
     }
     .menuoptions a:hover {
         color: rgb(233, 230, 230);
@@ -402,6 +440,7 @@ input, select {
     .menuoptions a:hover::before {
         transform:scaleX(1);
     }
+    
     /*---------------------------------------------------------------------------*/
 
 
@@ -419,10 +458,10 @@ input, select {
     .slideShow1, .slideShow2{
         width: 600px;
     }
-    .headtext{
+    .indexHeadtext{
         font-size: 70px;
     }
-    .infotext{
+    .indexInfotext{
         font-size: 55px;
     }
 }
