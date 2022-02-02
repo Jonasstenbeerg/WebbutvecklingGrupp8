@@ -13,9 +13,11 @@
         <div class="menuoptions">\
         <ul class="links">\
             <li><a href="Portfolio.html">Portfolio</a></li>\
-            <li><a href="#">Employees<i class="bx bx-chevron-down"></i></a>\
-                <li><a id="subMenu" href="#">Jonas</a></li>\
-                <li><a id="subMenu" href="#">Sandra</a></li>\
+            <li><a class="menuDrop" href="#">Employees<i class="bx bx-chevron-down"></i></a>\
+            <ul class="subMenu">\
+                <li><a href="#">Jonas</a></li>\
+                <li><a href="#">Sandra</a></li>\
+            </ul>\
             </li>\
             <li><a href="Contact.html">Contact</a></li>\
         </ul>\

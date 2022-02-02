@@ -16,7 +16,7 @@ const navDrop = () => {
             };
         });
     });
-}
+};
 navDrop();
 
 const navflexcontainer = document.querySelector('.navflexcontainer');

@@ -43,8 +43,8 @@ table {
 }
 .carousel {
     position: relative;
-    height: 600px;
-    width: 80%;
+    height: 400px;
+    width: 100%;
     margin: 0 auto;
 }
 .carousel__image {
@@ -303,6 +303,9 @@ margin-top: 1%;
         border-radius: 40px;
         text-align: center;
         padding: 2%;
+    }
+    .carousel{
+        height: 300px;
     }
 }
 @media (max-width: 380px){
