@@ -196,12 +196,25 @@ let autoPictures = setInterval(function(){
 }, 5000)
 
 const stopPictures = ()=>{
+    
+    const startButton = document.querySelector('.startStop-startButton');
+    const stopButton = document.querySelector('.startStop-stopButton');
+
+    stopButton.classList.add('disapear');
+    startButton.classList.remove('disapear');
 
 clearInterval(autoPictures);
+
 
 }
 
 const runPictures = ()=>{
+
+    const startButton = document.querySelector('.startStop-startButton');
+    const stopButton = document.querySelector('.startStop-stopButton');
+
+    stopButton.classList.remove('disapear');
+    startButton.classList.add('disapear');
     
     autoPictures = setInterval(function(){
         const currentSlide = track.querySelector('.current-slide');
