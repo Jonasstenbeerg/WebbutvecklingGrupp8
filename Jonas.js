@@ -246,3 +246,30 @@ const runPictures = ()=>{
     }, 5000)
     
 }
+const showAllButtons = ()=>{
+    
+    const carouselLeftButton = document.querySelector('.carousel__button--left');
+    const carouselRightButton = document.querySelector('.carousel__button--right');
+    const startStopButtonContainer = document.querySelector('.carousel__startStopPictures');
+    const dotsContainer = document.querySelector('.carousel__nav');
+
+    carouselLeftButton.classList.remove('allDisapear');
+    carouselRightButton.classList.remove('allDisapear');
+    startStopButtonContainer.classList.remove('allDisapear');
+    dotsContainer.classList.remove('allDisapear');
+
+}
+
+const hideAllButtons = ()=>{
+    
+    const carouselLeftButton = document.querySelector('.carousel__button--left');
+    const carouselRightButton = document.querySelector('.carousel__button--right');
+    const startStopButtonContainer = document.querySelector('.carousel__startStopPictures');
+    const dotsContainer = document.querySelector('.carousel__nav');
+
+    carouselLeftButton.classList.add('allDisapear');
+    carouselRightButton.classList.add('allDisapear');
+    startStopButtonContainer.classList.add('allDisapear');
+    dotsContainer.classList.add('allDisapear');
+
+}
