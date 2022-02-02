@@ -175,6 +175,8 @@ setInterval(function(){
     if(currentSlide===slides[4]){
         slides[4].classList.remove('current-slide');
         slides[0].classList.add('current-slide');
+        dots[4].classList.remove('current-slide');
+        dots[0].classList.add('current-slide');
         nextSlide = slides[0];
         nextDot = slides[0];
     }
