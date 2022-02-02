@@ -20,27 +20,27 @@
     <form id="form">
     
     <div class="company-info">
-        <i id="company-info-textstyle">Company Info</i>
+        <i id="company-info__heading">Company Info</i>
          <ul>
             <li><i class="fa fa-road"></i> Adress</li>
             <li><i class="fa fa-phone"></i> Phone</li>
             <li><i class="fa fa-envelope"></i> Mail</li>
         </ul>
     </div>
-    <div class="flex-forms boxstyle">
+    <div class="formBox boxstyle">
         
-        <h1 id="textbox">Contact</h1>
-        <input type="text" id="name" required placeholder="Name" /> 
-        <input type="text" id="telephonenr" required placeholder="TelephoneNumber" /> 
-        <input type="text" id="email" required onkeydown="emailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/><div id="error"></div> 
+        <h1 id="formbox__heading">Contact</h1>
+        <input type="text" id="formbox__nameInput" required placeholder="Name" /> 
+        <input type="text" id="formbox__telephonenrInput" required placeholder="TelephoneNumber" /> 
+        <input type="text" id="formbox__emailInput" required onkeydown="emailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/><div id="formBox__emailValidationResult"></div> 
         <div class="checkboxpos">
             
-            <label for="status">ok</label>
-            <input type="checkbox" name="status" id="status">
+            <label for="termsOfUseCheckbox">ok</label>
+            <input type="checkbox" name="termsOfUseCheckbox" id="formbox__termsOfUseCheckbox">
         </div>
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message here"></textarea>
+        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here"></textarea>
         
-        <span class="contactbuttons">
+        <span class="formBox__buttons">
             <button type="button" onclick="addResult()">Submit</button>
             <button type="button" onclick="dlInputs();">Download Inputs</button>
         </span>

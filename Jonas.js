@@ -4,19 +4,19 @@ const addResult = ()=>{
     //Säger åt knappen att inte submita direkt
     // ev.preventDefault();
     
-    var email = document.getElementById("email").value;
-    var errorElement = document.getElementById("error");
+    var email = document.getElementById("formbox__emailInput").value;
+    var emailValidationResult = document.getElementById("formBox__emailValidationResult");
     
     var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
     
     if(email.match(pattern))
     {
     let result = {
-        name: document.getElementById('name').value,
-        telephonenr: document.getElementById('telephonenr').value,
-        email: document.getElementById('email').value,
-        Ok: document.getElementById('status').value,
-        message: document.getElementById('message').value,
+        name: document.getElementById('formbox__nameInput').value,
+        telephonenr: document.getElementById('formbox__telephonenrInput').value,
+        email: document.getElementById('formbox__emailInput').value,
+        Ok: document.getElementById('formbox__termsOfUseCheckbox').value,
+        message: document.getElementById('formBox__messageInput').value,
     }
     results.push(result);
     //resetar formsen och lägger till result i arrayen results
@@ -24,7 +24,7 @@ const addResult = ()=>{
 
     // //Spara till local storage
     localStorage.setItem('formResult', JSON.stringify(results) );
-    errorElement.innerText = null;
+    emailValidationResult.innerText = null;
 }
 }
 const dlInputs = ()=>{
@@ -47,8 +47,8 @@ const dlInputs = ()=>{
 }
 const emailValidation = ()=>{
     
-    var email = document.getElementById("email").value;
-    var errorElement = document.getElementById("error");
+    var email = document.getElementById("formbox__emailInput").value;
+    var emailValidationResult = document.getElementById("formBox__emailValidationResult");
     
     var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
@@ -56,16 +56,16 @@ const emailValidation = ()=>{
     if(email.match(pattern))
     {
         input.push("RÄTT! så ska det se ut");
-        errorElement.style.color = "green";
+        emailValidationResult.style.color = "green";
 
     }
     else
     {
         input.push("Fel! namn@exempel.se");
-        errorElement.style.color = "red";
+        emailValidationResult.style.color = "red";
     }
     
-    errorElement.innerText = input;
+    emailValidationResult.innerText = input;
 }
 
 const track = document.querySelector('.carousel__track');
