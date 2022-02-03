@@ -119,12 +119,21 @@ width: 99%;
     font-family: sans-serif;
     background: linear-gradient(0deg, #46599e, #000105);
 }
+.personalHeading2 {
+    font-size: 20px;
+    transform: translateY(80px);
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 .box2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 550px;
+    width: 768px;
     height: 300px;
     background: transparent;
     border-bottom: 2px solid #000;
@@ -482,5 +491,6 @@ margin-top: 1%;
     }
     .personalPageMain2{
         display: block;
-        }
+    }
+    
 }
