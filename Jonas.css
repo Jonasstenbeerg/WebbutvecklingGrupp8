@@ -41,7 +41,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.carousel {
+.carousel, .carousel2{
     position: relative;
     height: 400px;
     width: 100%;
@@ -123,14 +123,14 @@ overflow: hidden;
     height: 60px;
 }
 .carousel__startStopPictures-button {
-    top: 75%;
-    width: 20%;
-    left: 40%;
-    right: 40%;
+    top: 79%;
+    width: 10%;
+    left: 45%;
+    right: 43%;
   position: absolute;
   /* width: 100px; */
   display: block;
-  height: 60px;
+  height: 40px;
   font-size: 15px; 
   font-family: Comic Sans MS, cursive, sans-serif;
   border-radius: 10%;
