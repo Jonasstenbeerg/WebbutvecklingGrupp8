@@ -438,11 +438,11 @@ input, select {
     }
     .menuoptions a::before {
         content: "";
-        position: absolute;
+        position: relative;
         display: block;
         width: 100%;
         height: 3px;
-        bottom: -1px;
+        top: 24px;
         left: 0;
         background-color: rgb(129, 250, 73);
         transform: scaleX(0);
