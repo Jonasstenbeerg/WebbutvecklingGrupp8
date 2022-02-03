@@ -237,6 +237,63 @@ input, select {
 }
 /*-------------------------------------------------------------------------*/
 
+/* --------------------------Sandra.html---------------------------------- */
+.personalPageMain{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(0deg, #02bd30, #000105);
+}
+.graphBox{
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgba(15, 15, 15, 0.822);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(1, 182, 40, 0.918);
+}
+.graphBox h1{
+    margin: 0;
+    padding: 0;
+    color: rgba(228, 228, 228, 0.822);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.knowledgeBox
+{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+.knowledgeBox p{
+    color: rgba(228, 228, 228, 0.822);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+.knowledgeBox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -26px
+}
+.graphBar{
+    background: rgb(0, 5, 8);
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(1, 182, 40, 0.918);
+    border-radius: 3px;
+}
+.percentFilled{
+    background: rgba(1, 182, 40, 0.918);
+    width: 100%;
+    height: 7px;
+}
+
+/*-------------------------------------------------------------------------*/
+
 /* -----------------------CSS för navbaren-------------------------------- */
 .topmenu{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -433,7 +490,7 @@ input, select {
     .menuoptions #subMenu{
         display: none;
     }
-    .menuoptions a:hover {
+    .menuoptions a:hover, .menuoptions .links .menuDrop:hover i{
         color: rgb(233, 230, 230);
     }
     .menuoptions a::before {
