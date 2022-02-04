@@ -89,6 +89,11 @@ letter-spacing: 1px;
     position: relative;
     top: -25px;
 }
+.skillBox p:nth-child(3) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
 .skill {
     background: #262626;
     padding: 4px;
@@ -101,16 +106,40 @@ letter-spacing: 1px;
     height: 4px;
 }
 #skill__level-html {
-width: 85%;
+animation-name: html1;
+animation-duration: 2s;
+animation-fill-mode: forwards;
 }
 #skill__level-css {
-width: 84%;   
+    animation-name: css1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
 }
 #skill__level-javaScript {
-width: 95%;    
+    animation-name: javaScript1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;    
 }
 #skill__level-pingis {
-width: 99%;   
+    animation-name: pingis1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+}
+@keyframes html1 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+@keyframes css1 {
+    from{width: 0%;}
+    to{width: 84%;}
+}
+@keyframes javaScript1 {
+    from{width: 0%;}
+    to{width: 95%;}
+}
+@keyframes pingis1 {
+    from{width: 0%;}
+    to{width: 99%;}
 }
 .personalPageMain2{
     display: none;

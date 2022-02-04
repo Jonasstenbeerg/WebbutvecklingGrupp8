@@ -273,3 +273,4 @@ const hideAllButtons = ()=>{
     dotsContainer.classList.add('allDisapear');
 
 }
+
