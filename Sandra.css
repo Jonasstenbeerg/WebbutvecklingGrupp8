@@ -277,7 +277,6 @@ input, select {
     box-sizing: border-box;
     width: 100%;
     margin: 10px 0;
-
 }
 .knowledgeBox p{
     color: rgba(228, 228, 228, 0.822);
@@ -286,6 +285,11 @@ input, select {
     font-weight: bold;
 }
 .knowledgeBox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -26px
+}
+.knowledgeBox p:nth-child(3){
     float: right;
     position: relative;
     top: -26px

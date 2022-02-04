@@ -28,7 +28,7 @@ window.onscroll = function(){
     }
     else{
         navflexcontainer.classList.remove('scrolled');
-    }
+    };
 };
 
 const counters = document.querySelectorAll('.percentCount');
@@ -57,12 +57,12 @@ counters.forEach(counter => {
             }
             else if(target === 82){
                 setTimeout(updateCount, 18)
-            }
+            };
         }
         else{
-            counter.innerText = target + "%";
-        }
+            counter.innerText = target;
+        };
         
-    }
+    };
     updateCount();
 });
