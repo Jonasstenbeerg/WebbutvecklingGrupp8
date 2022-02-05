@@ -223,17 +223,41 @@ animation-fill-mode: forwards;
     border-radius: 2px;
 }
 #skill__level-html2 {
-    height: 85%;
-    }
+    animation-name: html2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
 #skill__level-css2 {
-    height: 84%;   
-    }
+    animation-name: css2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;    
+}
 #skill__level-javaScript2 {
-    height: 95%;    
-    }
+    animation-name: javaScript2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;     
+}
 #skill__level-pingis2 {
-    height: 99%;   
-    }
+    animation-name: pingis2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+}
+@keyframes html2 {
+    from{height: 0%;}
+    to{height: 80%;}
+}
+@keyframes css2 {
+    from{height: 0%;}
+    to{height: 84%;}
+}
+@keyframes javaScript2 {
+    from{height: 0%;}
+    to{height: 95%;}
+}
+@keyframes pingis2 {
+    from{height: 0%;}
+    to{height: 99%;}
+}
 .carousel, .carousel2{
     position: relative;
     height: 400px;
