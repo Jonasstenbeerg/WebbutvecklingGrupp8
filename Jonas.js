@@ -83,6 +83,8 @@ const slides = Array.from(track.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
+const startButton = document.querySelector('.startStop-startButton');
+const stopButton = document.querySelector('.startStop-stopButton');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
@@ -202,27 +204,7 @@ let autoPictures = setInterval(function(){
 
 }, 5000)
 
-
-
-}
-const stopPictures = ()=>{
-    
-    const startButton = document.querySelector('.startStop-startButton');
-    const stopButton = document.querySelector('.startStop-stopButton');
-
-    stopButton.classList.add('disapear');
-    startButton.classList.remove('disapear');
-
-clearInterval(autoPictures);
-
-
-}
-
-const runPictures = ()=>{
-
-    const startButton = document.querySelector('.startStop-startButton');
-    const stopButton = document.querySelector('.startStop-stopButton');
-
+startButton.addEventListener('click', e => {
     stopButton.classList.remove('disapear');
     startButton.classList.add('disapear');
     
@@ -254,8 +236,17 @@ const runPictures = ()=>{
         
     
     }, 5000)
-    
+})
+
+stopButton.addEventListener('click', e => {
+    stopButton.classList.add('disapear');
+    startButton.classList.remove('disapear');
+
+clearInterval(autoPictures);
+})
 }
+
+
 const showAllButtons = ()=>{
     
     const carouselLeftButton = document.querySelector('.carousel__button--left');
