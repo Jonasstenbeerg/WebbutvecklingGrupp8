@@ -41,6 +41,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*-------------------------------------------------------------------------*/
+
+/* -------------CSS för persnlig sida med horisontalt diagram------------- */
+
 .personalPageMain1{
     
     width: 100%;
@@ -141,6 +146,9 @@ animation-fill-mode: forwards;
     from{width: 0%;}
     to{width: 99%;}
 }
+/*-------------------------------------------------------------------------*/
+
+/* ---------------CSS för personlig sida med vertikalt diagram------------ */
 .personalPageMain2{
     display: none;
     width: 100%;
@@ -267,6 +275,9 @@ animation-fill-mode: forwards;
     from{height: 0%;}
     to{height: 99%;}
 }
+/*-------------------------------------------------------------------------*/
+
+/* -----------------------CSS för portfolio-sida-------------------------- */
 .carousel, .carousel2{
     position: relative;
     height: 400px;
@@ -369,6 +380,9 @@ overflow: hidden;
 .allDisapear {
     display: none;
 }
+/*-------------------------------------------------------------------------*/
+
+/* -----------------------CSS för contact-sida---------------------------- */
 .bg-image{
     
   background: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png') center fixed no-repeat;

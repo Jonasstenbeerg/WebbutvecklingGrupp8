@@ -1,3 +1,6 @@
+/*-------------------------------------------------------------------------*/
+
+/* -----------------------JS för Contact-------------------------------- */
 
 let results = [];
 const addResult = ()=>{
@@ -68,7 +71,9 @@ const emailValidation = ()=>{
     emailValidationResult.innerText = input;
 }
 
+/*-------------------------------------------------------------------------*/
 
+/* -----------------------JS för Portfolio-------------------------------- */
 
 const track = document.querySelector('.carousel__track');
 if(track===null) {}
@@ -82,19 +87,11 @@ const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 
 
-// const slideWidth = slideSize.width;
-
-// slides[0].style.left = slideWidth * 0 + 'px';
-// slides[1].style.left = slideWidth * 1 + 'px';
-// slides[2].style.left = slideWidth * 2 + 'px';
-
 const setSlizedPosition = (slide, index ) =>{
     slide.style.left = slideWidth * index + 'px';
     };
 
 slides.forEach(setSlizedPosition);
-
-
 
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
@@ -103,9 +100,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 }
-// slides.forEach((slide,index) => {
-//     slide.style.left = slideWidth * index + 'px';
-// });
+
 
 const updateDots = (currentDot, targetDot) => {
     currentDot.classList.remove('current-slide');
@@ -288,6 +283,11 @@ const hideAllButtons = ()=>{
     dotsContainer.classList.add('allDisapear');
 
 }
+
+/*-------------------------------------------------------------------------*/
+
+/* -----------------------JS för personlig sida-------------------------------- */
+
 const skillBar = document.getElementById('skill__level-css');
 const skillBar2 = document.getElementById('skill__level-css2');
 
