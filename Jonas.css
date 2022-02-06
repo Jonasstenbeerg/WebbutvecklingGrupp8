@@ -56,7 +56,12 @@ table {
     font-family: sans-serif;
     background: linear-gradient(0deg, #46599e, #000105);
 }
-
+.photo {
+    height: 600px;
+    transform: translateY(25%);
+    width: 1300px;
+    opacity: .1;
+}
 .center {
     width: 100%;
     position: absolute;
@@ -161,10 +166,11 @@ animation-fill-mode: forwards;
     font-family: sans-serif;
     background: linear-gradient(0deg, #46599e, #000105);
 }
+
 .personalHeading2 {
     position: absolute;
     font-size: 50px;
-    transform: translateY(80px);
+    transform: translateY(160px);
     text-align: center;
     padding: 0;
     color: white;
@@ -175,7 +181,7 @@ animation-fill-mode: forwards;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-20%);
     width: 768px;
     height: 300px;
     background: transparent;
@@ -575,4 +581,11 @@ margin-top: 1%;
         display: flex;
     }
     
+}
+
+@media screen and (min-width: 1300px) {
+
+    .photo{
+        width: 100%;
+    }
 }
