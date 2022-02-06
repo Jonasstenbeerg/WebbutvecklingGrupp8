@@ -68,26 +68,19 @@ const emailValidation = ()=>{
     emailValidationResult.innerText = input;
 }
 
-const setSlizedPosition = (slide, index ) =>{
-    slide.style.left = slideWidth * index + 'px';
-    };
+
 
 const track = document.querySelector('.carousel__track');
-if(!track===null){
-    const slides = Array.from(track.children);
-    
-    const slideWidth = slides[0].getBoundingClientRect().width;
-    
-    slides.forEach(setSlizedPosition);
-
-}
-
+if(track===null) {}
+else
+{
+const slides = Array.from(track.children);
+const slideWidth = slides[0].getBoundingClientRect().width;
 const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
-if(!dotsNav===null){
-    const dots = Array.from(dotsNav.children);
-}
+const dots = Array.from(dotsNav.children);
+
 
 // const slideWidth = slideSize.width;
 
@@ -95,7 +88,11 @@ if(!dotsNav===null){
 // slides[1].style.left = slideWidth * 1 + 'px';
 // slides[2].style.left = slideWidth * 2 + 'px';
 
+const setSlizedPosition = (slide, index ) =>{
+    slide.style.left = slideWidth * index + 'px';
+    };
 
+slides.forEach(setSlizedPosition);
 
 
 
@@ -128,8 +125,7 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
             nextButton.classList.remove('is-hidden');
         }
 }
-if(!prevButton===null)
-{
+
     prevButton.addEventListener('click', e => {
     
         const currentSlide = track.querySelector('.current-slide');
@@ -145,10 +141,9 @@ if(!prevButton===null)
     
     });
     
-}
 
-if(!nextButton===null)
-{
+
+
 nextButton.addEventListener('click', e => {
 
     const currentSlide = track.querySelector('.current-slide');
@@ -162,9 +157,8 @@ nextButton.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
     
 });
-}
-if(!dotsNav===null)
-{
+
+
 dotsNav.addEventListener('click', e => {
 
     const targetDot = e.target.closest('button');
@@ -181,10 +175,9 @@ dotsNav.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
     
 })
-}
 
-if(!track===null)
-{
+
+
 let autoPictures = setInterval(function(){
     const currentSlide = track.querySelector('.current-slide');
     const currentDot = dotsNav.querySelector('.current-slide');
@@ -213,8 +206,10 @@ let autoPictures = setInterval(function(){
  
 
 }, 5000)
-}
 
+
+
+}
 const stopPictures = ()=>{
     
     const startButton = document.querySelector('.startStop-startButton');
@@ -293,10 +288,12 @@ const hideAllButtons = ()=>{
     dotsContainer.classList.add('allDisapear');
 
 }
-
 const skillBar = document.getElementById('skill__level-css');
 const skillBar2 = document.getElementById('skill__level-css2');
 
+if(skillBar===null) {}
+else
+{
 
 skillBar2.addEventListener('animationstart', () => {
   const counters2 = document.querySelectorAll('.percent2');
@@ -356,5 +353,5 @@ skillBar.addEventListener('animationstart', () => {
         updateCount();
     });
   });
-
+}
 
