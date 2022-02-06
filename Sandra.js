@@ -57,6 +57,12 @@ counters.forEach(counter => {
             }
             else if(target === 82){
                 setTimeout(updateCount, 18)
+            }
+            else if(target === 100){
+                setTimeout(updateCount, 15)
+            }
+            else if(target === 90){
+                setTimeout(updateCount, 17)
             };
         }
         else{

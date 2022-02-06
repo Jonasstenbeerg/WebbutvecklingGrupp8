@@ -367,6 +367,16 @@ input, select {
     height: 7px;
     animation: DB 1.5s ease-in forwards;
 }
+#percentSve{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: SVE 1.5s ease-in forwards;
+}
+#percentEng{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: ENG 1.5s ease-in forwards;
+}
 @keyframes HTML{
     0%{
         width: 0%;
@@ -405,6 +415,22 @@ input, select {
     }
     100%{
         width: 82%;
+    }
+}
+@keyframes SVE{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ENG{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
     }
 }
 
@@ -541,7 +567,7 @@ input, select {
 @media screen and (min-width: 768px) {
     /* -------------------------------Sandra.html------------------------------- */
     #personalPageMain{
-        height: 110vh;
+        height: 120vh;
         left: 50px;
         padding-top: 60px;
     }
@@ -572,7 +598,7 @@ input, select {
         flex-direction: row; 
         position: absolute;
         padding: 0px;
-        top: 550px;
+        top: 600px;
         left: 50%;
         transform: translateX(-50%);
         width: 650px;
@@ -586,6 +612,9 @@ input, select {
     #graphBox h1{
         position: absolute;
         top: -40px;
+    }
+    #language{
+        right: 10%;
     }
     .knowledgeBox{
         position: relative;
@@ -603,7 +632,7 @@ input, select {
         width: 45px;
         height: 100%;
         bottom: 0px;
-        left: 45px;
+        left: 27px;
         box-shadow:none;
         text-align: center;
         background: transparent;
@@ -621,22 +650,23 @@ input, select {
     .knowledgeBox p:nth-child(2){
         position: absolute;
         top: -15px;
-        left: 13%;
+        left: 19%;
         width: 100%;
     }
     .knowledgeBox p:nth-child(3){
         position: absolute;
         top: -15px;
+        left:-4%;
         width: 100%;
     }
     #footerHead{
         position: absolute;
-        bottom:-100px
+        bottom:-170px;
     } 
     #sandraFooter{
         margin-bottom: 0;
         position: absolute;
-        bottom: -135px;
+        bottom: -200px;
     }
     #percentHTML{
         border: 1px solid rgba(12, 22, 4, 0.815);
@@ -672,6 +702,20 @@ input, select {
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
         animation: DB 1.5s ease-in forwards;
+    }
+    #percentSve{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: SVE 1.5s ease-in forwards;
+    }
+    #percentEng{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: ENG 1.5s ease-in forwards;
     }
     @keyframes HTML{
         0%{
@@ -712,6 +756,22 @@ input, select {
         }
         100%{
             height: 82%;
+        }
+    }
+    @keyframes SVE{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+    @keyframes ENG{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 90%;
         }
     }
     
