@@ -393,64 +393,87 @@ overflow: hidden;
 /*-------------------------------------------------------------------------*/
 
 /* -----------------------CSS för contact-sida---------------------------- */
-.bg-image{
-    
-  background: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png') center fixed no-repeat;
-  background-size: cover;
-  overflow: hidden;
-    
-}
-.formBox{
-    float: right;
+.bg-image
+{
     display: flex;
     flex-direction: column;
+    background: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png') center fixed no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formBox{
+    width: auto;
+    display: flex;
+    float: none;
+    align-content: center;
+    margin-left: 8%;
+    margin-top: 120px;
+    height: 69vh;
+    padding-left: 22.488px;
+    padding-right: 22.488px;
+    flex-direction: column;
     align-items: center;
-    height: auto;
     justify-content: center;
     margin-right: 8%;
     border-radius: 5%;
-    padding-left: 3%;
-    padding-right: 3%;
-
 }
-
 .formBox > *{
-    margin-top: 10%;
+    
+    margin-top: 5%;
     border-radius: 40px;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
 }
-
+.company-info{
+    color: white;
+    display: flex;
+    position: relative;
+    height: 10vh;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 1;
+}
+.company-info li{
+    margin-top: 20px;
+    display: inline;
+}
+#form
+{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 92vh;
+    display: flex;
+}
+#formBox__messageInput
+{
+    height: 100px;
+    margin-top: auto;
+    border-radius: 4px;
+}
+.formBox div{
+    margin-top: 1%;
+}
+#company-info__heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+#formbox__heading{
+    font-size: 36px;
+    font-family: Georgia, serif;
+}
 #formBox__emailValidationResult
 {
     height: 20px;
     margin-top: 2%;
     padding: 0%;
 }
-#formBox__messageInput
-{
-    margin-top: auto;
-    height: 120px;
-    border-radius: 4px;
-}
-#form
-{
-    width: 100%;
-    height: 92vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#formbox__heading{
-    font-size: 36px;
-    font-family: Georgia, serif;
-}
 .checkboxpos
 {
     padding: 0%;
-    
-    
 }
 .boxstyle {
     display: flex;
@@ -477,113 +500,63 @@ justify-content: space-between;
     color: white;
     border-radius: 10px;
 }
-.company-info{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 50px;
-    color: white;
-    margin-left: 5%;
-    opacity: .5;
-    margin-bottom: 30px;
- 
-}
-
-.company-info li{
-    margin-top: 20px;
-}
-
-#company-info__heading{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 26px;
-}
-.formBox div{
-margin-top: 1%;
-}
-
-@media (max-width: 768px){
-    #formBox__messageInput
-{
-    height: 100px;
-}
-#form
-{
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
-}
-.bg-image
-{
-    display: flex;
-    flex-direction: column;
-        
-}
-.company-info li{
-    display: inline;
-        
-}
-.company-info{
-    display: flex;
-    position: relative;
-    height: 10vh;
-    align-items: center;
-    justify-content: flex-end;
-    opacity: 1;
-        
-}
-.formBox{
-    width: 300px;
-    display: flex;
-    float: none;
-    align-content: center;
-    margin-left: 8%;
-    margin-top: 120px;
-    height: 69vh;
-    padding-left: 22.488px;
-    padding-right: 22.488px;
-}
-.formBox > *{
-    
-        margin-top: 5%;
-        border-radius: 40px;
-        text-align: center;
-        padding: 2%;
-    }
-    .carousel{
-        height: 300px;
-    }
-}
-@media (max-width: 380px){
-.formBox{
-    
-    width: auto;
-}
-}
-/* -------------------------------------------------------------------------------- */
-/* -------------------Rätt media querys------------------------------------------ */
-
 @media screen and (min-width: 380px) {
-.center {
-    width: 380px;
-}
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .personalPageMain1{
-    display: none;
+    .formBox{
+    width: 300px;
     }
-    .personalPageMain2{
-        display: flex;
+    .center {
+        width: 380px;
     }
+
+}
+ 
+    @media screen and (min-width: 768px) {
+        .formBox{
+            float: right;
+            height: auto;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+        .bg-image {
+            display: block;
+        }
+        .formBox > *{
+            margin-top: 10%;
+            padding: 3%;
+        }
+        .company-info{
+            flex-direction: column;
+            height: 50px;
+            
+            margin-left: 5%;
+            opacity: .5;
+            margin-bottom: 30px;
+        }
+        .company-info li{
+            display: block;
+                
+        }
+        #form{
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-direction: row;
+        }
+        #formBox__messageInput
+        {  
+        height: 120px;
+        }
+        .personalPageMain1{
+            display: none;
+            }
+            .personalPageMain2{
+                display: flex;
+            }
     
-}
-
-@media screen and (min-width: 1300px) {
-
-    .photo{
-        width: 100%;
     }
-}
+    @media screen and (min-width: 1300px) {
+    
+        .photo{
+            width: 100%;
+        }
+        
+    }
