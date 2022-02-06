@@ -367,18 +367,15 @@ overflow: hidden;
 .carousel__indicator.current-slide {
     background: rgba(0,0,0,.75);
 }
-.is-hidden { display: none; }
-.carousel__startStopPictures-container {
-    width: 100px;
-    height: 60px;
+.is-hidden { 
+    display: none; 
 }
-.carousel__startStopPictures-button {
+.carousel__startStopPictures > * {
     top: 79%;
     width: 10%;
     left: 45%;
     right: 43%;
   position: absolute;
-  /* width: 100px; */
   display: block;
   height: 40px;
   font-size: 15px; 
