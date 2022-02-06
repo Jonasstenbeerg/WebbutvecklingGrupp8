@@ -500,10 +500,21 @@ justify-content: space-between;
     color: white;
     border-radius: 10px;
 }
+
+/*-------------------------------------------------------------------------*/
+
+/* -----------------------media querys------------------------------------ */
+
 @media screen and (min-width: 380px) {
+    
+    /* --------------Contact-------------------- */
+
     .formBox{
     width: 300px;
     }
+
+    /* --------------Personlig sida-------------------- */
+
     .center {
         width: 380px;
     }
@@ -511,6 +522,9 @@ justify-content: space-between;
 }
  
     @media screen and (min-width: 768px) {
+
+        /* --------------Contact-------------------- */
+
         .formBox{
             float: right;
             height: auto;
@@ -545,6 +559,9 @@ justify-content: space-between;
         {  
         height: 120px;
         }
+
+        /* --------------Personlig sida-------------------- */
+
         .personalPageMain1{
             display: none;
             }
@@ -554,7 +571,9 @@ justify-content: space-between;
     
     }
     @media screen and (min-width: 1300px) {
-    
+
+        /* --------------Personlig sida-------------------- */
+
         .photo{
             width: 100%;
         }
