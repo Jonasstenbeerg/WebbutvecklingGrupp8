@@ -277,7 +277,7 @@ const hideAllButtons = ()=>{
 
 /*-------------------------------------------------------------------------*/
 
-/* -----------------------JS för Portfolio bildspel 1--------------------- */
+/* -----------------------JS för Portfolio bildspel 2--------------------- */
 
 const track = document.querySelector('.carousel__track');
 if(track===null) {}
