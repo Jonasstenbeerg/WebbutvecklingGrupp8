@@ -23,7 +23,7 @@ const navflexcontainer = document.querySelector('.navflexcontainer');
 
 window.onscroll = function(){
     var top = window.scrollY;
-    if(top > 100){
+    if(top > 70){
         navflexcontainer.classList.add('scrolled');
     }
     else{
