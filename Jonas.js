@@ -279,18 +279,18 @@ const hideAllButtons = ()=>{
 
 /* -----------------------JS för Portfolio bildspel 2--------------------- */
 
-const track = document.querySelector('.carousel__track');
-if(track===null) {}
+const track2 = document.querySelector('.carousel2__track');
+if(track2===null) {}
 else
 {
-const slides = Array.from(track.children);
+const slides = Array.from(track2.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
-const nextButton = document.querySelector('.carousel__button--right');
-const prevButton = document.querySelector('.carousel__button--left');
-const startButton = document.querySelector('.startStop-startButton');
-const stopButton = document.querySelector('.startStop-stopButton');
-const dotsNav = document.querySelector('.carousel__nav');
-const dots = Array.from(dotsNav.children);
+const nextButton = document.querySelector('.carousel2__button--right');
+const prevButton = document.querySelector('.carousel2__button--left');
+const startButton = document.querySelector('.startStop2-startButton');
+const stopButton = document.querySelector('.startStop2-stopButton');
+const dotsNav2 = document.querySelector('.carousel2__nav');
+const dots2 = Array.from(dotsNav2.children);
 
 
 const setSlizedPosition = (slide, index ) =>{
@@ -316,27 +316,27 @@ const updateDots = (currentDot, targetDot) => {
 
 const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
     if(targetIndex=== 0) {
-        prevButton.classList.add('is-hidden');
-        nextButton.classList.remove('is-hidden');
+        prevButton.classList.add('is-hidden2');
+        nextButton.classList.remove('is-hidden2');
         } else if (targetIndex === slides.length - 1) {
-            prevButton.classList.remove('is-hidden');
-            nextButton.classList.add('is-hidden');
+            prevButton.classList.remove('is-hidden2');
+            nextButton.classList.add('is-hidden2');
         } else {
-            prevButton.classList.remove('is-hidden');
-            nextButton.classList.remove('is-hidden');
+            prevButton.classList.remove('is-hidden2');
+            nextButton.classList.remove('is-hidden2');
         }
 }
 
     prevButton.addEventListener('click', e => {
     
-        const currentSlide = track.querySelector('.current-slide');
+        const currentSlide = track2.querySelector('.current-slide');
         const prevSlide = currentSlide.previousElementSibling;
-        const currentDot = dotsNav.querySelector('.current-slide');
+        const currentDot = dotsNav2.querySelector('.current-slide');
         const prevDot = currentDot.previousElementSibling;
         const prevIndex = slides.findIndex(slide => slide === prevSlide)
     
     
-        moveToSlide(track, currentSlide, prevSlide);
+        moveToSlide(track2, currentSlide, prevSlide);
         updateDots(currentDot, prevDot);
         hideShowArrows(slides, prevButton, nextButton, prevIndex);
     
@@ -347,31 +347,31 @@ const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
 
 nextButton.addEventListener('click', e => {
 
-    const currentSlide = track.querySelector('.current-slide');
+    const currentSlide = track2.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling;
-    const currentDot = dotsNav.querySelector('.current-slide');
+    const currentDot = dotsNav2.querySelector('.current-slide');
     const nextDot = currentDot.nextElementSibling;
     const nextIndex = slides.findIndex(slide => slide === nextSlide)
     
-    moveToSlide(track, currentSlide, nextSlide);
+    moveToSlide(track2, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
     
 });
 
 
-dotsNav.addEventListener('click', e => {
+dotsNav2.addEventListener('click', e => {
 
     const targetDot = e.target.closest('button');
 
     if(!targetDot) return
 
-    const currentSlide = track.querySelector('.current-slide');
-    const currentDot = dotsNav.querySelector('.current-slide');
-    const targetIndex = dots.findIndex(dot => dot === targetDot);
+    const currentSlide = track2.querySelector('.current-slide');
+    const currentDot = dotsNav2.querySelector('.current-slide');
+    const targetIndex = dots2.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
 
-    moveToSlide(track, currentSlide, targetSlide);
+    moveToSlide(track2, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
     
@@ -379,17 +379,17 @@ dotsNav.addEventListener('click', e => {
 
 
 
-let autoPictures = setInterval(function(){
-    const currentSlide = track.querySelector('.current-slide');
-    const currentDot = dotsNav.querySelector('.current-slide');
+let autoPictures2 = setInterval(function(){
+    const currentSlide = track2.querySelector('.current-slide');
+    const currentDot = dotsNav2.querySelector('.current-slide');
     var nextSlide;
     var nextDot;
     
     if(currentSlide===slides[4]){
         slides[4].classList.remove('current-slide');
         slides[0].classList.add('current-slide');
-        dots[4].classList.remove('current-slide');
-        dots[0].classList.add('current-slide');
+        dots2[4].classList.remove('current-slide');
+        dots2[0].classList.add('current-slide');
         nextSlide = slides[0];
         nextDot = slides[0];
     }
@@ -401,7 +401,7 @@ let autoPictures = setInterval(function(){
     
     const nextIndex = slides.findIndex(slide => slide === nextSlide)
     
-    moveToSlide(track, currentSlide, nextSlide);
+    moveToSlide(track2, currentSlide, nextSlide);
     updateDots(currentDot, nextDot);
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
  
@@ -409,20 +409,20 @@ let autoPictures = setInterval(function(){
 }, 5000)
 
 startButton.addEventListener('click', e => {
-    stopButton.classList.remove('disapear');
-    startButton.classList.add('disapear');
+    stopButton.classList.remove('disapear2');
+    startButton.classList.add('disapear2');
     
-    autoPictures = setInterval(function(){
-        const currentSlide = track.querySelector('.current-slide');
-        const currentDot = dotsNav.querySelector('.current-slide');
+    autoPictures2 = setInterval(function(){
+        const currentSlide = track2.querySelector('.current-slide');
+        const currentDot = dotsNav2.querySelector('.current-slide');
         var nextSlide;
         var nextDot;
         
         if(currentSlide===slides[4]){
             slides[4].classList.remove('current-slide');
             slides[0].classList.add('current-slide');
-            dots[4].classList.remove('current-slide');
-            dots[0].classList.add('current-slide');
+            dots2[4].classList.remove('current-slide');
+            dots2[0].classList.add('current-slide');
             nextSlide = slides[0];
             nextDot = slides[0];
         }
@@ -434,7 +434,7 @@ startButton.addEventListener('click', e => {
         
         const nextIndex = slides.findIndex(slide => slide === nextSlide)
         
-        moveToSlide(track, currentSlide, nextSlide);
+        moveToSlide(track2, currentSlide, nextSlide);
         updateDots(currentDot, nextDot);
         hideShowArrows(slides, prevButton, nextButton, nextIndex);
         
@@ -443,39 +443,39 @@ startButton.addEventListener('click', e => {
 })
 
 stopButton.addEventListener('click', e => {
-    stopButton.classList.add('disapear');
-    startButton.classList.remove('disapear');
+    stopButton.classList.add('disapear2');
+    startButton.classList.remove('disapear2');
 
-clearInterval(autoPictures);
+clearInterval(autoPictures2);
 })
 }
 
 
-const showAllButtons = ()=>{
+const showAllButtons2 = ()=>{
     
-    const carouselLeftButton = document.querySelector('.carousel__button--left');
-    const carouselRightButton = document.querySelector('.carousel__button--right');
-    const startStopButtonContainer = document.querySelector('.carousel__startStopPictures');
-    const dotsContainer = document.querySelector('.carousel__nav');
+    const carouselLeftButton = document.querySelector('.carousel2__button--left');
+    const carouselRightButton = document.querySelector('.carousel2__button--right');
+    const startStopButtonContainer = document.querySelector('.carousel2__startStopPictures');
+    const dotsContainer = document.querySelector('.carousel2__nav');
 
-    carouselLeftButton.classList.remove('allDisapear');
-    carouselRightButton.classList.remove('allDisapear');
-    startStopButtonContainer.classList.remove('allDisapear');
-    dotsContainer.classList.remove('allDisapear');
+    carouselLeftButton.classList.remove('allDisapear2');
+    carouselRightButton.classList.remove('allDisapear2');
+    startStopButtonContainer.classList.remove('allDisapear2');
+    dotsContainer.classList.remove('allDisapear2');
 
 }
 
-const hideAllButtons = ()=>{
+const hideAllButtons2 = ()=>{
     
-    const carouselLeftButton = document.querySelector('.carousel__button--left');
-    const carouselRightButton = document.querySelector('.carousel__button--right');
-    const startStopButtonContainer = document.querySelector('.carousel__startStopPictures');
-    const dotsContainer = document.querySelector('.carousel__nav');
+    const carouselLeftButton = document.querySelector('.carousel2__button--left');
+    const carouselRightButton = document.querySelector('.carousel2__button--right');
+    const startStopButtonContainer = document.querySelector('.carousel2__startStopPictures');
+    const dotsContainer = document.querySelector('.carousel2__nav');
 
-    carouselLeftButton.classList.add('allDisapear');
-    carouselRightButton.classList.add('allDisapear');
-    startStopButtonContainer.classList.add('allDisapear');
-    dotsContainer.classList.add('allDisapear');
+    carouselLeftButton.classList.add('allDisapear2');
+    carouselRightButton.classList.add('allDisapear2');
+    startStopButtonContainer.classList.add('allDisapear2');
+    dotsContainer.classList.add('allDisapear2');
 
 }
 
