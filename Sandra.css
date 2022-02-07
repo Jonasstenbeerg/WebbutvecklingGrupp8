@@ -333,18 +333,25 @@ input, select {
     box-shadow: 0 0px 5px 0 rgba(1, 182, 40, 0.918);
 
 }
+.myFooter{
+    background: #028022da;
+}
+#footerIcons{
+    margin-bottom: 0;
+    padding-bottom: 15px;
+} 
 #footerHead{
     color: rgba(1, 6, 53, 0.822);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
-    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
     margin-bottom: 10px;
 }
 #footerIcons{
     display: flex;
     justify-content: center;
     align-content: flex-start;
-    margin-bottom: 10px;
 }
 #percentHTML{
     background: rgba(1, 182, 40, 0.918);
@@ -674,17 +681,8 @@ input, select {
         left:-4%;
         width: 100%;
     }
-    .myFooter{
-        background: #028022da;
-    }
-    #footerHead{
-        margin-top: 0;
-        text-align: center;
-    }
-    #footerIcons{
-        margin-bottom: 0;
-        padding-bottom: 15px;
-    } 
+    
+    
     #percentHTML{
         
         border: 1px solid rgba(12, 22, 4, 0.815);
