@@ -31,44 +31,50 @@ window.onscroll = function(){
     };
 };
 
-const counters = document.querySelectorAll('.percentCount');
-const speed = 100;
+const percentSkill = document.querySelector('.percentHTML')
 
-counters.forEach(counter => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
+percentSkill.addEventListener('animationstart', () =>{
 
-        const inc = target / speed;
-        
-        if(count < target) {
-            counter.innerText = Math.ceil(count + inc);
-            if(target === 46){
-                setTimeout(updateCount, 35)
+    const counters = document.querySelectorAll('.percentCount');
+    const speed = 100;
+
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute('data-target');
+            const count = +counter.innerText;
+
+            const inc = target / speed;
+            
+            if(count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                if(target === 46){
+                    setTimeout(updateCount, 35)
+                }
+                else if(target === 48){
+                    setTimeout(updateCount, 30)
+                }
+                else if(target === 87){
+                    setTimeout(updateCount, 17)
+                }
+                else if(target === 16){
+                    setTimeout(updateCount, 60)
+                }
+                else if(target === 82){
+                    setTimeout(updateCount, 18)
+                }
+                else if(target === 100){
+                    setTimeout(updateCount, 15)
+                }
+                else if(target === 90){
+                    setTimeout(updateCount, 17)
+                };
             }
-            else if(target === 48){
-                setTimeout(updateCount, 30)
-            }
-            else if(target === 87){
-                setTimeout(updateCount, 17)
-            }
-            else if(target === 16){
-                setTimeout(updateCount, 60)
-            }
-            else if(target === 82){
-                setTimeout(updateCount, 18)
-            }
-            else if(target === 100){
-                setTimeout(updateCount, 15)
-            }
-            else if(target === 90){
-                setTimeout(updateCount, 17)
+            else{
+                counter.innerText = target;
             };
-        }
-        else{
-            counter.innerText = target;
+            
         };
-        
-    };
-    updateCount();
+        updateCount();
+    });
+    
 });
