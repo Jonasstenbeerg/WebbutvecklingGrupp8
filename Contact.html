@@ -30,12 +30,31 @@
     <div class="formBox boxstyle">
         
         <h1 id="formbox__heading">Contact</h1>
-        <input type="text" id="formbox__nameInput" required placeholder="Name" /> 
-        <input type="text" id="formbox__telephonenrInput" required placeholder="TelephoneNumber" /> 
-        <input type="text" id="formbox__emailInput" required onkeydown="emailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/><div id="formBox__emailValidationResult"></div> 
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__nameInput" required placeholder="Name" /> 
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__nameValidationResult">error</small> 
+        </div>
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__telephonenrInput" required placeholder="TelephoneNumber" /> 
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__telephoneValidationResult">error</small> 
+        </div>
+        
+        <div class="formBox__control">
+            <input type="text" id="formbox__emailInput" required onkeydown="emailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small id="formBox__emailValidationResult">error</small> 
+        </div>
+        
         <div class="checkboxpos">
             
-            <label for="termsOfUseCheckbox">ok</label>
+            <label for="termsOfUseCheckbox" style="color: white;">ok</label>
             <input type="checkbox" name="termsOfUseCheckbox" id="formbox__termsOfUseCheckbox">
         </div>
         <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here"></textarea>

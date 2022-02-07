@@ -4,8 +4,6 @@
 
 let results = [];
 const addResult = ()=>{
-    //Säger åt knappen att inte submita direkt
-    // ev.preventDefault();
     
     var email = document.getElementById("formbox__emailInput").value;
     var emailValidationResult = document.getElementById("formBox__emailValidationResult");
@@ -31,7 +29,6 @@ const addResult = ()=>{
 }
 }
 const dlInputs = ()=>{
-
     
     const blob = new Blob([JSON.stringify(results)],{type: "octet-stream"});
 

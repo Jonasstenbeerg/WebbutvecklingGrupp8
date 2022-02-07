@@ -560,17 +560,39 @@ overflow: hidden;
     margin-right: 8%;
     border-radius: 5%;
 }
-.formBox > *{
+.formBox__control input{
     
+    display: block;
+    width: 250px;
+    height: 20px;
     margin-top: 5%;
     border-radius: 40px;
-    text-align: center;
     padding: 2%;
+    text-align: center;
+}
+
+.formBox__control {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.formBox__control i {
+    position: absolute;
+    right: -10px;
+    top: 17px;
+    
+}
+.formBox__control small {
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 25px;
+    
 }
 .company-info{
     color: white;
     display: flex;
-    position: relative;
     height: 10vh;
     align-items: center;
     justify-content: flex-end;
@@ -604,6 +626,8 @@ overflow: hidden;
     font-size: 26px;
 }
 #formbox__heading{
+    margin-top: 25px;
+    color: white;
     font-size: 36px;
     font-family: Georgia, serif;
 }
@@ -621,7 +645,6 @@ overflow: hidden;
     display: flex;
     align-self: center;
     background-color: #000;
-    color: #fff;
     opacity: .5;
     bottom: 10%;
 }
