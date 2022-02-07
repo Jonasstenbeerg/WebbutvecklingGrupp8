@@ -54,19 +54,25 @@ table {
 }
 .profileWindow{
     display: flex;
-    height: 225px;
+    height: auto;
     width: 90%;
     background: #333;
     overflow: hidden;
     border-radius: 40px;
     box-shadow: 0 20px 50px rgba(0,0,0.5);
     box-sizing: border-box;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-grow: initial;
 }
-.profileWindow span:nth-child(1) {
+.profileWindow span {
     padding: 5%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+.profileWindow img {
+    height: 50%;
+    width: 50%;
 }
 .personalPageMain1{
     
@@ -74,7 +80,7 @@ table {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     font-family: sans-serif;
     background: linear-gradient(0deg, #46599e, #000105);
 }
@@ -84,10 +90,10 @@ table {
 .photo {
     position: absolute;
     background-size: cover;
-    height: 100%;
+    height: 120%;
     width: 100%;
     opacity: .05;
-    transform: translateY(20%);
+    transform: translateY(30%);
     
 }
 .center {
@@ -648,7 +654,15 @@ justify-content: space-between;
 
     .profileWindow{
         width: 80%;
+        flex-direction: row-reverse;
+        height: 300px;
     }
+    .profileWindow img {
+    width: 150px;
+    height: 200px;
+    
+    }
+    
 
 }
  
