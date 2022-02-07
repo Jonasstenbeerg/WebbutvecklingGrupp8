@@ -679,55 +679,56 @@ input, select {
         bottom: -200px;
     }
     #percentHTML{
+        
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: HTML 1.5s ease-in forwards;
+        animation: HTML2 1.5s ease-in forwards;
     }
     #percentCSS{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: CSS 1.5s ease-in forwards;
+        animation: CSS2 1.5s ease-in forwards;
     }
     #percentCsharp{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: Csharp 1.5s ease-in forwards;
+        animation: Csharp2 1.5s ease-in forwards;
     }
     #percentJS{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: JS 1s ease-in forwards;
+        animation: JS2 1s ease-in forwards;
     }
     #percentDB{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: DB 1.5s ease-in forwards;
+        animation: DB2 1.5s ease-in forwards;
     }
     #percentSve{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: SVE 1.5s ease-in forwards;
+        animation: SVE2 1.5s ease-in forwards;
     }
     #percentEng{
         border: 1px solid rgba(12, 22, 4, 0.815);
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
         background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
-        animation: ENG 1.5s ease-in forwards;
+        animation: ENG2 1.5s ease-in forwards;
     }
-    @keyframes HTML{
+    @keyframes HTML2{
         0%{
             height: 0%;
         }
@@ -736,7 +737,7 @@ input, select {
             
         } 
     }
-    @keyframes CSS{
+    @keyframes CSS2{
         0%{
             height: 0%;
         }
@@ -744,7 +745,7 @@ input, select {
             height: 48%;
         }
     }
-    @keyframes Csharp{
+    @keyframes Csharp2{
         0%{
             height: 0%;
         }
@@ -752,7 +753,7 @@ input, select {
             height: 87%;
         }
     }
-    @keyframes JS{
+    @keyframes JS2{
         0%{
             height: 0%;
         }
@@ -760,7 +761,7 @@ input, select {
             height: 16%;
         }
     }
-    @keyframes DB{
+    @keyframes DB2{
         0%{
             height: 0%;
         }
@@ -768,7 +769,7 @@ input, select {
             height: 82%;
         }
     }
-    @keyframes SVE{
+    @keyframes SVE2{
         0%{
             height: 0%;
         }
@@ -776,7 +777,7 @@ input, select {
             height: 100%;
         }
     }
-    @keyframes ENG{
+    @keyframes ENG2{
         0%{
             height: 0%;
         }
