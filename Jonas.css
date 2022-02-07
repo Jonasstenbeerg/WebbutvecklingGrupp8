@@ -561,7 +561,6 @@ overflow: hidden;
     border-radius: 5%;
 }
 .formBox__control input{
-    
     display: block;
     width: 250px;
     height: 20px;
@@ -581,15 +580,35 @@ overflow: hidden;
     position: absolute;
     right: -10px;
     top: 17px;
-    
+    visibility: hidden;
 }
 .formBox__control small {
     position: absolute;
     color: white;
     top: 50px;
     left: 25px;
-    
+    visibility: hidden;
 }
+.formBox__control.success input {
+    border: 3px solid green;
+}
+.formBox__control.success i.fa-check-circle {
+    visibility: visible;
+    color: green;
+}
+.formBox__control.fail input {
+border: 3px solid red;
+
+}
+.formBox__control.fail small {
+    visibility: visible;
+    color: red;
+}
+.formBox__control.fail i.fa-exclamation-circle {
+    visibility: visible;
+    color: red; 
+}
+
 .company-info{
     color: white;
     display: flex;
