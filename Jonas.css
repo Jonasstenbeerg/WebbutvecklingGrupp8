@@ -672,12 +672,14 @@ justify-content: space-between;
     
     }
     .photo {
-    height: 750px;
-    transform: translateY(28%);
+    height: 825px;
+    transform: translateY(19%);
     }
     #sandraFooter{
     margin: 0;
+    margin-bottom: 10px;
     }
+    
     
 
 }
