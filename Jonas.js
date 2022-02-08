@@ -5,13 +5,13 @@
 let results = [];
 const addResult = ()=>{
     
-    var email = document.getElementById("formbox__emailInput").value;
-    var emailValidationResult = document.getElementById("formBox__emailValidationResult");
+    // var email = document.getElementById("formbox__emailInput").value;
+    // var emailValidationResult = document.getElementById("formBox__emailValidationResult");
     
-    var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+    // var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
     
-    if(email.match(pattern))
-    {
+    // if(email.match(pattern))
+    // {
     let result = {
         name: document.getElementById('formbox__nameInput').value,
         telephonenr: document.getElementById('formbox__telephonenrInput').value,
@@ -25,9 +25,9 @@ const addResult = ()=>{
 
     // //Spara till local storage
     localStorage.setItem('formResult', JSON.stringify(results) );
-    emailValidationResult.innerText = null;
+    // emailValidationResult.innerText = null;
 }
-}
+
 const dlInputs = ()=>{
     
     const blob = new Blob([JSON.stringify(results)],{type: "octet-stream"});
@@ -89,20 +89,47 @@ const validateAll = ()=>{
     var telephone = document.getElementById("formbox__telephonenrInput");
     var email = document.getElementById("formbox__emailInput");
 
-    var namePattern = /^([A-Za-zá-ý]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$/;
+    var namePattern = /^((?!-)\w+[A-Za-zá-ý-]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*).*(?<!-)$/;
+    
+    var numberPattern = /^\d+\.?\d*$/;
     if(name.value.trim()==='')
     {
         setError(name,'name får inte vara tomt')
     }
     else if(!name.value.match(namePattern))
     {
-        setError(name,'ditt namn måste bara innehålla bokstäver')
+        setError(name,'namnet kan ej innehålla udda tecken')
     }
     else
     {
         setSuccess(name);
     }
-
+    if(telephone.value.trim()==='')
+    {
+        setError(telephone,'Telephonenumber får inte vara tomt')
+    }
+    else if(!telephone.value.match(numberPattern))
+    {
+        setError(telephone,'bara siffror!!')
+    }
+    else
+    {
+        setSuccess(telephone);
+    }
+    if(email.value.trim()==='')
+    {
+        setError(email,'email får inte vara tomt')
+    }
+    var numberOffSucces = document.querySelectorAll('.formBox__control.success');
+    // console.log(numberOffSucces);
+    
+    if(numberOffSucces.length===3)
+    {
+        addResult();
+        numberOffSucces.forEach(success => {
+            success.className = 'formBox__control';
+        });
+    }
 }
 
 
