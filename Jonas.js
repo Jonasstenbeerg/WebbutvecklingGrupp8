@@ -141,7 +141,7 @@ const validateAll = ()=>{
         setError(email,'email får inte vara tomt')
     }
     var numberOffSucces = document.querySelectorAll('.formBox__control.success');
-    // console.log(numberOffSucces);
+    const button = document.querySelector(".btn");
     
     if(numberOffSucces.length===3)
     {
@@ -150,10 +150,15 @@ const validateAll = ()=>{
             success.className = 'formBox__control';
         });
         const svg = document.querySelector("path");
-        const button = document.querySelector(".btn");
+        
         button.classList.add("animating");
         svg.classList.add("svg")
         setTimeout(() => {  button.classList.remove("animating"); svg.classList.remove("svg"); }, 2000);
+    }
+    else 
+    {
+        button.classList.add("fail");
+        setTimeout(() => {  button.classList.remove("fail"); }, 700);
     }
 }
 
