@@ -431,7 +431,7 @@ overflow: hidden;
 
 /*-------------------------------------------------------------------------*/
 
-/* -----------------------CSS för portfolio-sida carousel 1---------------- */
+/* -----------------------CSS för portfolio-sida carousel 2---------------- */
 
 .carousel2 {
     position: relative;
@@ -563,7 +563,7 @@ overflow: hidden;
 .formBox__control input{
     display: block;
     width: 250px;
-    height: 20px;
+    height: 15px;
     margin-top: 5%;
     border-radius: 40px;
     padding: 2%;
@@ -663,17 +663,16 @@ border: 3px solid red;
 .boxstyle {
     display: flex;
     align-self: center;
-    background-color: #000;
-    opacity: .5;
+    background-color: rgba(0, 0, 0, 0.74);
     bottom: 10%;
 }
 .formBox__buttons
 {
-margin-top: 10px ;
-margin-bottom: 10px;
-display: flex;
-width: 180px;
-justify-content: space-between;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
 }
 .formBox__buttons > *{
     width: 80px;
@@ -684,6 +683,26 @@ justify-content: space-between;
     color: white;
     border-radius: 10px;
 }
+.fa-download{
+    font-size: 25px;
+    display: none;
+}
+.fa-download.active{
+    display:block;
+}
+.fa-download.inactive{
+    display:none;
+}
+.button__download.active{
+    background-color: rgb(15, 99, 15);
+}
+.button__download.active span{
+    display: none;  
+}
+.button__download.inactive span{
+    display: block;
+}
+
 
 /*-------------------------------------------------------------------------*/
 
@@ -696,7 +715,7 @@ justify-content: space-between;
     .formBox{
     width: 300px;
     }
-
+    
     /* --------------Personlig sida-------------------- */
 
     .center {
@@ -764,7 +783,7 @@ justify-content: space-between;
         {  
         height: 120px;
         }
-
+        
         /* --------------Personlig sida-------------------- */
 
         .personalPageMain1{
