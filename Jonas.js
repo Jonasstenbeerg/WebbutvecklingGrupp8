@@ -45,28 +45,66 @@ const dlInputs = ()=>{
     URL.revokeObjectURL(href);
     a.remove();
 }
+const setError = (input, message)=>{
+
+    const formControll = input.parentElement;
+    const errorMessage = formControll.querySelector('small');
+
+    errorMessage.innerText = message;
+
+    formControll.className = 'formBox__control fail';
+}
+const setSuccess = (input)=>{
+
+    const formControll = input.parentElement;
+
+    formControll.className = 'formBox__control success';
+}
 const emailValidation = ()=>{
     
-    var email = document.getElementById("formbox__emailInput").value;
+    
+    var email = document.getElementById("formbox__emailInput");
     var emailValidationResult = document.getElementById("formBox__emailValidationResult");
     
+    const formControll = email.parentElement;
+
     var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 
-    let input = []
-    if(email.match(pattern))
+    // let input = []
+    if(email.value.match(pattern))
     {
-        input.push("RÄTT! så ska det se ut");
-        emailValidationResult.style.color = "green";
+        setSuccess(email);
 
     }
     else
     {
-        input.push("Fel! namn@exempel.se");
-        emailValidationResult.style.color = "red";
+        setError(email,'MEN FEL!!!!');
+
     }
     
-    emailValidationResult.innerText = input;
+    // emailValidationResult.innerText = input;
 }
+const validateAll = ()=>{
+    var name = document.getElementById("formbox__nameInput");
+    var telephone = document.getElementById("formbox__telephonenrInput");
+    var email = document.getElementById("formbox__emailInput");
+
+    var namePattern = /^([A-Za-zá-ý]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*)$/;
+    if(name.value.trim()==='')
+    {
+        setError(name,'name får inte vara tomt')
+    }
+    else if(!name.value.match(namePattern))
+    {
+        setError(name,'ditt namn måste bara innehålla bokstäver')
+    }
+    else
+    {
+        setSuccess(name);
+    }
+
+}
+
 
 /*-------------------------------------------------------------------------*/
 
