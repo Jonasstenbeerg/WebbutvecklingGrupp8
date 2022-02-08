@@ -45,6 +45,26 @@ const dlInputs = ()=>{
     URL.revokeObjectURL(href);
     a.remove();
 }
+var button = document.querySelector('.button__download');
+var symbol = document.querySelector('.fa-download');
+if(button){
+
+    button.addEventListener('click',function() {
+        symbol.classList.add('active');
+        button.classList.add('active');
+        window.setTimeout(function(){
+            symbol.classList.remove('active');
+            button.classList.remove('active');
+            symbol.classList.add('inactive');
+            button.classList.add('inactive');
+        }, 2000);
+        symbol.classList.remove('inactive');
+        button.classList.remove('inactive');
+
+    });
+    
+};
+
 const setError = (input, message)=>{
 
     const formControll = input.parentElement;
