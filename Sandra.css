@@ -228,7 +228,7 @@ input, select {
     padding: 0px 20px;
     line-height: 1.5em;
 }
-#projectText{
+.projectText{
     width: 100%;
 }
 #slideShow1, #slideShow2{
@@ -812,7 +812,7 @@ input, select {
     #portfolioHeadInfo h1{
         font-size: 45px;
     }
-    #projectText {
+    .projectText {
         width: 50%;
     }
     #slideShow1, #slideShow2{

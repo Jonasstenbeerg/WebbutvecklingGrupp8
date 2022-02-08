@@ -539,7 +539,7 @@ overflow: hidden;
 {
     display: flex;
     flex-direction: column;
-    background: url('https://cdn.discordapp.com/attachments/934079399144325183/935471206201692170/businessman-2956974_960_720.png') center fixed no-repeat;
+    background: url('Foton/contactBg.png') center fixed no-repeat;
     background-size: cover;
     overflow: hidden;
 }

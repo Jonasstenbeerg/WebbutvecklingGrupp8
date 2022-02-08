@@ -15,7 +15,7 @@ var html =
             <li><a href="Portfolio.html">Portfolio</a></li>\
             <li class="menuDrop"><a href="#">Anställda<i class="bx bx-chevron-down"></i></a>\
                 <ul class="subMenu">\
-                    <li><a href="#">Jonas</a></li>\
+                    <li><a href="Jonas.html">Jonas</a></li>\
                     <li><a href="Sandra.html">Sandra</a></li>\
                 </ul>\
             </li>\
