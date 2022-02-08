@@ -60,8 +60,14 @@
         <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here"></textarea>
         
         <span class="formBox__buttons">
-            <button type="button" onclick="validateAll()">Submit</button>
-            <button class="button__download" type="button" onclick="dlInputs();"><i class="fa fa-download"></i><span>Download Inputs</span></button>
+            <button type="button" class="btn" onclick="validateAll()">Submit
+                <div class="checkmark-container">
+                    <svg x="0px" y="0px" fill="none" stroke="white" visibility="hidden" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+            <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+          </svg>
+                </div>
+            </button>
+            <button class="button__download btn" type="button" onclick="dlInputs();"><i class="fa fa-download"></i><span>Download Inputs</span></button>
         </span>
     
     </div> 

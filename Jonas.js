@@ -149,6 +149,11 @@ const validateAll = ()=>{
         numberOffSucces.forEach(success => {
             success.className = 'formBox__control';
         });
+        const svg = document.querySelector("path");
+        const button = document.querySelector(".btn");
+        button.classList.add("animating");
+        svg.classList.add("svg")
+        setTimeout(() => {  button.classList.remove("animating"); svg.classList.remove("svg"); }, 2000);
     }
 }
 
