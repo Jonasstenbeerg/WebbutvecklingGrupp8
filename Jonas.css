@@ -590,10 +590,10 @@ left: 33%;
 }
 @keyframes fail-shake {
 50% {
-transform: translateX(10%);
+transform: translateX(5%);
 }
 100%{
-    transform: translateX(-10%);
+    transform: translateX(-5%);
 }
 }
 
