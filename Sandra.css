@@ -98,7 +98,7 @@ input, select {
 /*--------------------------------------------Index.html---------------------------------------------------*/
 
 .home-bg{
-    background: url('https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center fixed no-repeat;
+    background: url('Foton/indexFoto.jpeg') center fixed no-repeat;
     background-size: cover;
 }
 #indexContainer{
@@ -200,7 +200,7 @@ input, select {
 #portfolio-bg{
     display: flex;
     flex-direction: column;
-    background-image: url("https://cdn.discordapp.com/attachments/934079399144325183/937632428590268426/work-5382501_960_720.png");
+    background-image: url("Foton/portfolioBg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -251,7 +251,7 @@ input, select {
     background: linear-gradient(0deg, #028022da, #000105);
 }
 .backColor{
-    background: url("https://cdn.pixabay.com/photo/2017/07/25/01/16/giant-panda-2536653_960_720.jpg") center no-repeat;
+    background: url("Foton/giant-panda.jpg") center no-repeat;
     background-size: cover;
 }
 #name{
