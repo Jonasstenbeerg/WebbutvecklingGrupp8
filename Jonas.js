@@ -16,7 +16,10 @@ const addResult = ()=>{
         name: document.getElementById('formbox__nameInput').value,
         telephonenr: document.getElementById('formbox__telephonenrInput').value,
         email: document.getElementById('formbox__emailInput').value,
-        Ok: document.getElementById('formbox__Checkbox').value,
+        Offert: document.getElementById('formbox__offertCheckbox').checked,
+        Rådgivning: document.getElementById('formbox__rådgivningCheckbox').checked,
+        Tidsbokning: document.getElementById('formbox__tidsbokningCheckbox').checked,
+        Annat: document.getElementById('formbox__annatCheckbox').checked,
         message: document.getElementById('formBox__messageInput').value,
     }
     results.push(result);
