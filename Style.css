@@ -343,13 +343,13 @@ input, select {
     align-items: center;
     flex-direction: column;
 }
-#footerHeadjonas{
+.footerHeadjonas{
     margin-top: 80px;
     color: white;
     font-size: 25px;
     font-family: Comic Sans MS, cursive, sans-serif;
 } 
-#jonasFooter{
+.jonasFooter{
     font-size: 30px;
 }
 #nameJonas {
