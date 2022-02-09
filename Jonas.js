@@ -603,7 +603,7 @@ skillBar2.addEventListener('animationstart', () => {
   counters2.forEach(counter => {
       const updateCount = () =>{
         const target = +counter.getAttribute('data-target');
-        const speed = +counter.getAttribute('speed');
+        const speed = 200;
         const count = +counter.innerText; 
   
         const inc = target / speed;
@@ -633,7 +633,7 @@ skillBar.addEventListener('animationstart', () => {
     counters.forEach(counter => {
         const updateCount = () =>{
           const target = +counter.getAttribute('data-target');
-          const speed = +counter.getAttribute('speed');
+          const speed = 200;
           const count = +counter.innerText; 
     
           const inc = target / speed;
