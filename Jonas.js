@@ -8,7 +8,7 @@ const addResult = ()=>{
         name: document.getElementById('formbox__nameInput').value,
         telephonenr: document.getElementById('formbox__telephonenrInput').value,
         email: document.getElementById('formbox__emailInput').value,
-        Ok: document.getElementById('formbox__termsOfUseCheckbox').value,
+        Ok: document.getElementById('formbox__Checkbox').value,
         message: document.getElementById('formBox__messageInput').value,
     }
     results.push(result);
