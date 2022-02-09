@@ -837,6 +837,83 @@ input, select {
 
 /*---------------------------------------------Contact.html--------------------------------------------------*/
 
+.btn{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(52, 104, 146);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 10px;
+}
+
+.animating {
+    background-color: transparent;
+    color: transparent;
+    user-select: none;
+    cursor: default;
+    border: 0;
+}
+
+.btn::before {
+    content: "";
+    display: none;
+    background-color: rgb(52, 104, 146);
+    inset: 0;
+    position: absolute;
+    border-radius: 10px;
+    animation: success 500ms;
+    animation-fill-mode: forwards;
+}
+.btn.animating::before {
+    display: block;
+}
+.svg {
+    color: rgb(255, 247, 247);
+    visibility: visible;
+    background-color: transparent;
+    stroke-dashoffset: 40.84104919433594;
+    stroke-dasharray: 40.84104919433594;
+    animation: rita 1000ms 400ms;
+    animation-fill-mode: forwards;
+
+}
+.checkmark-container {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15%;
+    left: 33%;
+}
+.btn.fail {
+    background-color: red;
+    animation:fail-shake .1s ease-in-out .1s infinite;
+}
+@keyframes fail-shake {
+50% {
+transform: translateX(5%);
+}
+100%{
+    transform: translateX(-5%);
+}
+}
+
+@keyframes success {
+    100% {
+        left: 25%;
+        right: 25%;
+        border-radius: 100%;
+        background-color: rgb(8, 141, 64);
+    }
+}
+
+@keyframes rita {
+    100%{
+        stroke-dashoffset: 0%;
+        
+    }
+}
 
 .bg-image
 {
@@ -899,7 +976,7 @@ input, select {
     color: green;
 }
 .formBox__control.fail input {
-border: 3px solid red;
+    border: 3px solid red;
 
 }
 .formBox__control.fail small {
@@ -1001,83 +1078,6 @@ border: 3px solid red;
 }
 .button__download.inactive span{
     display: block;
-}
-.btn{
-    position: relative;
-    width: 80px;
-    height: 40px;
-    background-color: rgb(52, 104, 146);
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    border-radius: 10px;
-}
-
-.animating {
-    background-color: transparent;
-    color: transparent;
-    user-select: none;
-    cursor: default;
-    border: 0;
-}
-
-.btn::before {
-    content: "";
-    display: none;
-    background-color: rgb(52, 104, 146);
-    inset: 0;
-    position: absolute;
-    border-radius: 10px;
-    animation: success 500ms;
-    animation-fill-mode: forwards;
-}
-.btn.animating::before {
-    display: block;
-}
-.svg {
-    color: rgb(255, 247, 247);
-    visibility: visible;
-    background-color: transparent;
-    stroke-dashoffset: 40.84104919433594;
-    stroke-dasharray: 40.84104919433594;
-    animation: rita 1000ms 400ms;
-    animation-fill-mode: forwards;
-
-}
-.checkmark-container {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 15%;
-    left: 33%;
-}
-.btn.fail {
-    background-color: red;
-    animation:fail-shake .1s ease-in-out .1s infinite;
-}
-@keyframes fail-shake {
-    50% {
-        transform: translateX(5%);
-    }
-    100%{
-        transform: translateX(-5%);
-    }
-}
-
-@keyframes success {
-    100% {
-        left: 25%;
-        right: 25%;
-        border-radius: 100%;
-        background-color: rgb(8, 141, 64);
-    }
-}
-
-@keyframes rita {
-    100%{
-        stroke-dashoffset: 0%;
-        
-    }
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
