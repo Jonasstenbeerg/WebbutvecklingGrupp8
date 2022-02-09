@@ -352,7 +352,7 @@ input, select {
 .jonasFooter{
     font-size: 30px;
 }
-#nameJonas {
+.nameJonas {
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 60px;
@@ -391,7 +391,7 @@ input, select {
     background: linear-gradient(0deg, #46599ec9, #000105);
 }
 .personalPageMain1 > * {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .bg-photo {
     background: url('Foton/giant-panda.jpg') center fixed no-repeat;
@@ -502,7 +502,7 @@ input, select {
 }
 
 .personalPageMain2 > *{
-    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .personalHeading2 {
     font-size: 50px;
@@ -837,6 +837,171 @@ input, select {
 
 /*---------------------------------------------Contact.html--------------------------------------------------*/
 
+
+.bg-image
+{
+    display: flex;
+    flex-direction: column;
+    background: url('Foton/contactBg.png') center fixed no-repeat;
+    background-size: cover;
+}
+
+.formBox{
+    width: auto;
+    display: flex;
+    float: none;
+    align-content: center;
+    margin-left: 8%;
+    margin-top: 15%;
+    height: 520px;
+    padding-left: 22.488px;
+    padding-right: 22.488px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8%;
+    border-radius: 5%;
+}
+.formBox__control input{
+    display: block;
+    width: 250px;
+    height: 15px;
+    margin-top: 5%;
+    border-radius: 40px;
+    padding: 2%;
+    text-align: center;
+}
+
+.formBox__control {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.formBox__control i {
+    position: absolute;
+    right: -14px;
+    top: 11px;
+    visibility: hidden;
+}
+.formBox__control small {
+    position: absolute;
+    color: white;
+    top: 45px;
+    left: 6px;
+    visibility: hidden;
+}
+.formBox__control.success input {
+    border: 3px solid green;
+}
+.formBox__control.success i.fa-check-circle {
+    visibility: visible;
+    color: green;
+}
+.formBox__control.fail input {
+border: 3px solid red;
+
+}
+.formBox__control.fail small {
+    visibility: visible;
+    color: red;
+}
+.formBox__control.fail i.fa-exclamation-circle {
+    visibility: visible;
+    color: red; 
+}
+
+.company-info{
+    color: white;
+    display: flex;
+    margin-top: 15%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 1;
+}
+.company-info li{
+    margin-top: 20px;
+    display: inline;
+}
+#form
+{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#formBox__messageInput
+{
+    height: 130px;
+    margin-top: auto;
+    border-radius: 4px;
+}
+.formBox div{
+    margin-top: 1%;
+}
+#company-info__heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+#formbox__heading{
+    margin-top: 25px;
+    color: white;
+    font-size: 36px;
+    font-family: Georgia, serif;
+}
+#formBox__emailValidationResult
+{
+    height: 20px;
+    padding: 0%;
+}
+.checkboxpos
+{
+    text-align: center;
+    padding: 5px;
+}
+.checkboxpos p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: #cccccc;
+    padding: 5px;
+}
+.boxstyle {
+    display: flex;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    bottom: 10%;
+}
+.formBox__buttons
+{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+.fa-download{
+    font-size: 25px;
+    display: none;
+}
+.fa-download.active{
+    display:block;
+}
+.fa-download.inactive{
+    display:none;
+}
+.button__download.active{
+    background-color: rgb(15, 99, 15);
+}
+.button__download.active span{
+    display: none;  
+}
+.button__download.inactive span{
+    display: block;
+}
 .btn{
     position: relative;
     width: 80px;
@@ -913,163 +1078,6 @@ input, select {
         stroke-dashoffset: 0%;
         
     }
-}
-.bg-image
-{
-    display: flex;
-    flex-direction: column;
-    background: url('Foton/contactBg.png') center fixed no-repeat;
-    background-size: cover;
-}
-
-.formBox{
-    width: auto;
-    display: flex;
-    float: none;
-    align-content: center;
-    margin-left: 8%;
-    margin-top: 15%;
-    height: 500px;
-    padding-left: 22.488px;
-    padding-right: 22.488px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 8%;
-    border-radius: 5%;
-}
-.formBox__control input{
-    display: block;
-    width: 250px;
-    height: 15px;
-    margin-top: 5%;
-    border-radius: 40px;
-    padding: 2%;
-    text-align: center;
-}
-
-.formBox__control {
-    position: relative;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-}
-
-.formBox__control i {
-    position: absolute;
-    right: -14px;
-    top: 11px;
-    visibility: hidden;
-}
-.formBox__control small {
-    position: absolute;
-    color: white;
-    top: 50px;
-    left: 25px;
-    visibility: hidden;
-}
-.formBox__control.success input {
-    border: 3px solid green;
-}
-.formBox__control.success i.fa-check-circle {
-    visibility: visible;
-    color: green;
-}
-.formBox__control.fail input {
-border: 3px solid red;
-
-}
-.formBox__control.fail small {
-    visibility: visible;
-    color: red;
-}
-.formBox__control.fail i.fa-exclamation-circle {
-    visibility: visible;
-    color: red; 
-}
-
-.company-info{
-    color: white;
-    display: flex;
-    margin-top: 15%;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    opacity: 1;
-}
-.company-info li{
-    margin-top: 20px;
-    display: inline;
-}
-#form
-{
-    justify-content: center;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-#formBox__messageInput
-{
-    height: 100px;
-    margin-top: auto;
-    border-radius: 4px;
-}
-.formBox div{
-    margin-top: 1%;
-}
-#company-info__heading{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 26px;
-}
-#formbox__heading{
-    margin-top: 25px;
-    color: white;
-    font-size: 36px;
-    font-family: Georgia, serif;
-}
-#formBox__emailValidationResult
-{
-    height: 20px;
-    margin-top: 2%;
-    padding: 0%;
-}
-.checkboxpos
-{
-    padding: 0%;
-}
-.boxstyle {
-    display: flex;
-    align-self: center;
-    background-color: rgba(0, 0, 0, 0.74);
-    bottom: 10%;
-}
-.formBox__buttons
-{
-    margin-top: 10px ;
-    margin-bottom: 10px;
-    display: flex;
-    width: 180px;
-    justify-content: space-between;
-}
-.fa-download{
-    font-size: 25px;
-    display: none;
-}
-.fa-download.active{
-    display:block;
-}
-.fa-download.inactive{
-    display:none;
-}
-.button__download.active{
-    background-color: rgb(15, 99, 15);
-}
-.button__download.active span{
-    display: none;  
-}
-.button__download.inactive span{
-    display: block;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -1546,6 +1554,10 @@ border: 3px solid red;
     .formBox__control i {
         right: -5px;
         top: 20px;
+    }
+    .formBox__control small{
+        top: 54px;
+        left: 14px;
     }
     /*--------------------------------------------------------------------------------------------------------------*/
 
