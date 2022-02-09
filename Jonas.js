@@ -332,21 +332,8 @@ clearInterval(autoPictures);
 })
 }
 
-track.addEventListener('click', e => {
-    const hidden = document.querySelector('.carousel__nav');
-    console.log(hidden);
-    if(hidden===null)
-    {
-        console.log('show')
-        // showAllButtons();
-        
-    }
-    else
-    {
-        // hideAllButtons();
-        console.log('hide')
-    }
-})
+
+
 
 const showAllButtons = ()=>{
     
@@ -375,7 +362,26 @@ const hideAllButtons = ()=>{
     dotsContainer.classList.add('allDisapear');
 
 }
+    
 
+track.addEventListener('click', e => {
+    var viewportWidth = window.innerWidth;
+    const hidden = document.querySelector('.carousel__nav.allDisapear');
+    
+    if ( viewportWidth < 768 ) {
+        
+    if(hidden===null)
+    {
+        hideAllButtons();
+    }
+    else
+    {
+        showAllButtons();
+    }
+}
+});
+    
+    
 
 /*-------------------------------------------------------------------------*/
 
@@ -581,7 +587,22 @@ const hideAllButtons2 = ()=>{
 
 }
 
-
+track2.addEventListener('click', e => {
+    var viewportWidth = window.innerWidth;
+    const hidden = document.querySelector('.carousel2__nav.allDisapear');
+    
+    if ( viewportWidth < 768 ) {
+        
+    if(hidden===null)
+    {
+        hideAllButtons();
+    }
+    else
+    {
+        showAllButtons();
+    }
+}
+});
 /*-------------------------------------------------------------------------*/
 
 /* -----------------------JS för personlig sida-------------------------------- */
