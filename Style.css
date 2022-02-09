@@ -1,0 +1,1636 @@
+/*---------------------------CSS reset------------------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {    
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------Index.html---------------------------------------------------*/
+
+.home-bg{
+    background: url('Foton/indexFoto.jpeg') center fixed no-repeat;
+    background-size: cover;
+}
+#indexContainer{
+    min-height: 90vh;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#indexHeadtext{
+    font-size: 45px;
+    color: rgba(0, 255, 55, 0.918);
+    margin: 20px;
+    text-align: center;
+}
+#indexInfotext{
+    font-size: 30px;
+    color: rgb(224, 250, 250);
+    margin: 20px;
+    text-align: center;
+    padding-bottom: 8%;
+    padding-right: 9%;
+    padding-left: 9%;
+}
+#review{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    justify-self: center;
+    color: rgb(238, 244, 245);
+}
+
+#indexFooter{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    bottom: 10px;
+}
+.fa{
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+}
+.fa-star{
+    color: goldenrod;
+    padding: 0;
+    margin-top: 5px;
+}
+.fa-facebook{
+    color: rgba(228, 228, 228, 0.822);
+    background-color: rgba(19, 19, 182, 0.719);
+    border-radius: 30%;
+}
+.fa-twitter{
+    background-color: rgba(228, 228, 228, 0.822);
+    color: rgba(19, 90, 182, 0.719);
+    border-radius: 30%;
+}
+.fa-linkedin{
+    color: rgba(228, 228, 228, 0.822);
+    background-color: rgba(19, 19, 182, 0.719);
+    border-radius: 30%;
+}
+.fa-github{
+    color: rgba(245, 243, 243, 0.822);
+    background-color: rgba(2, 2, 3, 0.719);
+    border-radius: 30%;
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------Portfolio.html---------------------------------------------------*/
+
+#portfolioNav{
+    background-color: rgba(0, 0, 0, 0.664)
+}
+#portfolioHeadInfo{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 80vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0.664)
+
+}
+#portfolioHeadInfo h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: rgb(224, 250, 250);
+    text-align: center;
+}
+#portfolioHeadInfo span{
+    color: rgba(0, 255, 55, 0.918);
+}
+#portfolio-bg{
+    display: flex;
+    flex-direction: column;
+    background-image: url("Foton/portfolioBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+#projectinfo-1, #projectinfo-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: rgb(224, 250, 250);
+    padding: 20px;
+    text-align: center;
+}
+#projectinfo-1 h1, #projectinfo-2 h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+#projectinfo-1 p, #projectinfo-2 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding: 0px 20px;
+    line-height: 1.5em;
+}
+.projectText{
+    width: 100%;
+}
+#slideShow1, #slideShow2{
+    width: 100%;
+    height: auto;
+}
+.carousel , .carousel2{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+.carousel__image , .carousel2__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.carousel__track-container, .carousel2__track-container{
+    background: #000;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__track, .carousel2__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: 1s;
+}
+.carousel__slide, .carousel2__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    
+}
+.carousel__button, .carousel2__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    cursor: pointer;
+    opacity: .7;
+}
+.carousel__button--left, .carousel2__button--left{
+    left: 0px;
+}
+.carousel__button--right, .carousel2__button--right{
+    right: 0px;
+}
+.carousel__button img, .carousel2__button img{
+    width: 40px;
+}
+.carousel__nav, .carousel2__nav{
+    top: 90%;
+    left: 25%;
+    width: 50%;
+    right: 25%;
+    position: absolute;
+    background: rgb(252, 250, 250);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 50%;
+    opacity: .7;
+}
+.carousel__indicator, .carousel2__indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,.3);
+    margin: 0 12px;
+    cursor: pointer;
+}
+.carousel__indicator.current-slide, .carousel2__indicator.current-slide{
+    background: rgba(0,0,0,.75);
+}
+.is-hidden, .is-hidden2{ 
+    display: none; 
+}
+.carousel__startStopPictures > *, .carousel2__startStopPictures > * {
+    top: 79%;
+    width: 10%;
+    left: 45%;
+    right: 43%;
+    position: absolute;
+    display: block;
+    height: 40px;
+    font-size: 15px; 
+    font-family: Comic Sans MS, cursive, sans-serif;
+    border-radius: 10%;
+    opacity: .7;
+    border: 0;
+}
+.disapear, .disapear2{
+    display: none;
+}
+.allDisapear, .allDisapear2{
+    display: none;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------Jonas.html---------------------------------------------------*/
+
+/* -------------CSS för persnlig sida med horisontalt diagram------------- */
+.socialMedia-container {
+    align-items: center;
+    flex-direction: column;
+}
+#footerHeadjonas{
+    margin-top: 80px;
+    color: white;
+    font-size: 25px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+} 
+#jonasFooter{
+    font-size: 30px;
+}
+#nameJonas {
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: white;
+}
+.profileWindow{
+    display: flex;
+    height: auto;
+    width: 90%;
+    background: #333;
+    overflow: hidden;
+    border-radius: 40px;
+    box-shadow: 0 20px 50px rgba(0,0,0.5);
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-grow: initial;
+}
+.profileWindow span {
+    padding: 5%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profileWindow img {
+    height: 50%;
+    width: 50%;
+}
+.personalPageMain1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(0deg, #46599ec9, #000105);
+}
+.personalPageMain1 > * {
+    margin-top: 10px;
+}
+.bg-photo {
+    background: url('Foton/giant-panda.jpg') center fixed no-repeat;
+    background-size: cover;
+    
+}
+.center {
+    width: 90%;
+    padding: 20px;
+    background: #333;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0.5);
+    border-radius: 40px;
+}
+.center > * {
+    margin-bottom: 20px;
+}
+.personalHeading {
+    text-align: center;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.skillBox {
+   box-sizing: border-box;
+   width: 100%;
+   margin: 20px 0;
+
+}
+.skillBox p {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.skillBox p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skillBox p:nth-child(3) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skill {
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 2px;
+}
+.skill__level {
+    background: #0fffb7;
+    height: 4px;
+}
+#skill__level-html {
+    animation-name: html1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+#skill__level-css {
+    animation-name: css1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+}
+#skill__level-javaScript {
+    animation-name: javaScript1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;    
+}
+#skill__level-pingis {
+    animation-name: pingis1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+}
+@keyframes html1 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+@keyframes css1 {
+    from{width: 0%;}
+    to{width: 84%;}
+}
+@keyframes javaScript1 {
+    from{width: 0%;}
+    to{width: 95%;}
+}
+@keyframes pingis1 {
+    from{width: 0%;}
+    to{width: 99%;}
+}
+/*-------------------------------------------------------------------------*/
+
+/* ---------------CSS för personlig sida med vertikalt diagram------------ */
+.personalPageMain2{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(0deg, #46599ec9, #000105);
+
+}
+
+.personalPageMain2 > *{
+    margin-top: 50px;
+}
+.personalHeading2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.box2 {
+    
+    top: 50%;
+    left: 50%;
+    width: 768px;
+    height: 300px;
+    background: transparent;
+    border-bottom: 5px solid rgb(201, 12, 12);
+    border-left: 5px solid rgb(201, 12, 12);
+    display: flex;
+}
+.box2 .skill2 {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+.box2 .skill2 .graph2 {
+    position: absolute;
+    width: 40px;
+    background: rgba(0, 0, 0, 1);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.box2 .skill2 .graph2:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 0;
+    background: linear-gradient(0deg, #003ba5, #009ffe);
+}
+.box2 .skill2 .graph2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, .1)
+
+}
+.box2 .skill2 .graph2 > * {
+    position: absolute;
+    top: -20px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.box2 .skill2 .graph2 div:nth-child(1) {
+    
+    left: 30%;
+    
+}
+.box2 .skill2 .graph2 span:nth-child(2) {
+    
+    left: 70%;
+    
+}
+.box2 .skill2 .name2 {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background: #050505;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+#skill__level-html2 {
+    animation-name: html2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+}
+#skill__level-css2 {
+    animation-name: css2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;    
+}
+#skill__level-javaScript2 {
+    animation-name: javaScript2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;     
+}
+#skill__level-pingis2 {
+    animation-name: pingis2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+}
+@keyframes html2 {
+    from{height: 0%;}
+    to{height: 80%;}
+}
+@keyframes css2 {
+    from{height: 0%;}
+    to{height: 84%;}
+}
+@keyframes javaScript2 {
+    from{height: 0%;}
+    to{height: 95%;}
+}
+@keyframes pingis2 {
+    from{height: 0%;}
+    to{height: 99%;}
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------Sandra.html---------------------------------------------------*/
+#personalPageMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: linear-gradient(0deg, #028022da, #000105);
+}
+.backFoto{
+    background: url("Foton/giant-panda.jpg") center no-repeat;
+    background-size: cover;
+}
+#nameSandra{
+    color: rgb(233, 230, 230);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+#sandraFotoInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(15, 15, 15, 0.822);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(1, 182, 40, 0.918);
+    border-radius: 10%;
+    width: 90%;
+}
+#foto{
+    width: 200px;
+    height: 350px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(9, 49, 5);
+    border-radius: 15%;
+    box-shadow: 0 10px 30px rgba(1, 182, 40, 0.918);
+}
+#sandraInfoText{
+    margin: 0px 10px 10px 10px;
+    color: rgb(233, 230, 230);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+#graphBox{
+    width: 90%;
+    padding: 20px;
+    background: rgba(15, 15, 15, 0.822);
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(1, 182, 40, 0.918);
+    border-radius: 10%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#graphBox h1{
+    margin: 0;
+    padding: 0;
+    color: rgba(228, 228, 228, 0.822);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.knowledgeBox
+{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+}
+.knowledgeBox p{
+    color: rgba(228, 228, 228, 0.822);
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+.knowledgeBox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -26px
+}
+.knowledgeBox p:nth-child(3){
+    float: right;
+    position: relative;
+    top: -26px
+}
+.graphBar{
+    background: rgb(0, 5, 8);
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid rgba(1, 182, 40, 0.918);
+    border-radius: 3px;
+    box-shadow: 0 0px 5px 0 rgba(1, 182, 40, 0.918);
+
+}
+.myFooter{
+    background: #028022da;
+}
+#footerIcons{
+    margin-bottom: 0;
+    padding-bottom: 15px;
+} 
+#footerHead{
+    color: rgba(1, 6, 53, 0.822);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#footerIcons{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+#percentHTML{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: HTML 1.5s ease-in forwards;
+}
+#percentCSS{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: CSS 1.5s ease-in forwards;
+}
+#percentCsharp{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: Csharp 1.5s ease-in forwards;
+}
+#percentJS{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: JS 1s ease-in forwards;
+}
+#percentDB{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: DB 1.5s ease-in forwards;
+}
+#percentSve{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: SVE 1.5s ease-in forwards;
+}
+#percentEng{
+    background: rgba(1, 182, 40, 0.918);
+    height: 7px;
+    animation: ENG 1.5s ease-in forwards;
+}
+@keyframes HTML{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 46%;
+    }
+}
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 48%;
+    }
+}
+@keyframes Csharp{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 87%;
+    }
+}
+@keyframes JS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 16%;
+    }
+}
+@keyframes DB{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 82%;
+    }
+}
+@keyframes SVE{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ENG{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+/*------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------Contact.html--------------------------------------------------*/
+
+.btn{
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(52, 104, 146);
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    border-radius: 10px;
+}
+
+.animating {
+    background-color: transparent;
+    color: transparent;
+    user-select: none;
+    cursor: default;
+    border: 0;
+}
+
+.btn::before {
+    content: "";
+    display: none;
+    background-color: rgb(52, 104, 146);
+    inset: 0;
+    position: absolute;
+    border-radius: 10px;
+    animation: success 500ms;
+    animation-fill-mode: forwards;
+}
+.btn.animating::before {
+    display: block;
+}
+.svg {
+    color: rgb(255, 247, 247);
+    visibility: visible;
+    background-color: transparent;
+    stroke-dashoffset: 40.84104919433594;
+    stroke-dasharray: 40.84104919433594;
+    animation: rita 1000ms 400ms;
+    animation-fill-mode: forwards;
+
+}
+.checkmark-container {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 15%;
+    left: 33%;
+}
+.btn.fail {
+    background-color: red;
+    animation:fail-shake .1s ease-in-out .1s infinite;
+}
+@keyframes fail-shake {
+    50% {
+        transform: translateX(5%);
+    }
+    100%{
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes success {
+    100% {
+        left: 25%;
+        right: 25%;
+        border-radius: 100%;
+        background-color: rgb(8, 141, 64);
+    }
+}
+
+@keyframes rita {
+    100%{
+        stroke-dashoffset: 0%;
+        
+    }
+}
+.bg-image
+{
+    display: flex;
+    flex-direction: column;
+    background: url('Foton/contactBg.png') center fixed no-repeat;
+    background-size: cover;
+}
+
+.formBox{
+    width: auto;
+    display: flex;
+    float: none;
+    align-content: center;
+    margin-left: 8%;
+    margin-top: 15%;
+    height: 500px;
+    padding-left: 22.488px;
+    padding-right: 22.488px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8%;
+    border-radius: 5%;
+}
+.formBox__control input{
+    display: block;
+    width: 250px;
+    height: 15px;
+    margin-top: 5%;
+    border-radius: 40px;
+    padding: 2%;
+    text-align: center;
+}
+
+.formBox__control {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.formBox__control i {
+    position: absolute;
+    right: -14px;
+    top: 11px;
+    visibility: hidden;
+}
+.formBox__control small {
+    position: absolute;
+    color: white;
+    top: 50px;
+    left: 25px;
+    visibility: hidden;
+}
+.formBox__control.success input {
+    border: 3px solid green;
+}
+.formBox__control.success i.fa-check-circle {
+    visibility: visible;
+    color: green;
+}
+.formBox__control.fail input {
+border: 3px solid red;
+
+}
+.formBox__control.fail small {
+    visibility: visible;
+    color: red;
+}
+.formBox__control.fail i.fa-exclamation-circle {
+    visibility: visible;
+    color: red; 
+}
+
+.company-info{
+    color: white;
+    display: flex;
+    margin-top: 15%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    opacity: 1;
+}
+.company-info li{
+    margin-top: 20px;
+    display: inline;
+}
+#form
+{
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#formBox__messageInput
+{
+    height: 100px;
+    margin-top: auto;
+    border-radius: 4px;
+}
+.formBox div{
+    margin-top: 1%;
+}
+#company-info__heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 26px;
+}
+#formbox__heading{
+    margin-top: 25px;
+    color: white;
+    font-size: 36px;
+    font-family: Georgia, serif;
+}
+#formBox__emailValidationResult
+{
+    height: 20px;
+    margin-top: 2%;
+    padding: 0%;
+}
+.checkboxpos
+{
+    padding: 0%;
+}
+.boxstyle {
+    display: flex;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    bottom: 10%;
+}
+.formBox__buttons
+{
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+.fa-download{
+    font-size: 25px;
+    display: none;
+}
+.fa-download.active{
+    display:block;
+}
+.fa-download.inactive{
+    display:none;
+}
+.button__download.active{
+    background-color: rgb(15, 99, 15);
+}
+.button__download.active span{
+    display: none;  
+}
+.button__download.inactive span{
+    display: block;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------CSS för navbaren-----------------------------------------------*/
+.topmenu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navmenu{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.homelogo a{
+    padding: 5px;
+    color: rgb(221, 221, 221);
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold; 
+    letter-spacing: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.navflexcontainer{
+    display: flex;
+    width: 100%;
+    background-color: rgba(39, 38, 38, 0.781);
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 1;
+}
+.menuoptions{
+    text-align: center;
+    left: 0%;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(39, 38, 38, 0.781);
+    display: none;
+}
+.menuoptions li{
+    padding: 0px 0px;
+}
+.menuoptions .links{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    line-height: 1.3;
+    font-size: 20px;
+}
+.menuoptions a, .menuoptions i{
+    text-decoration: none;
+    color: rgb(233, 230, 230);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+}
+.menuoptions a:hover{
+    color: rgb(129, 250, 73);
+}
+.menuoptions .menuDrop .subMenu{
+    display: none;
+}
+.menuoptions .links .menuDrop:hover i{
+    color: rgb(129, 250, 73);
+    transform: rotate(180deg);
+}
+.menuoptions .menuDrop .subMenu-active{
+    display: block;
+}
+.burger{
+    padding: 7px;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(221, 221, 221);
+    margin: 4px;
+    transition: 0.5s;
+}
+.menuoptions-active{
+    position: absolute;
+    display: block;
+}
+.cross .line1{
+    -webkit-transform: rotate(-45deg) translate(-5px,5px);
+    transform: rotate(-45deg) translate(-5px,5px);
+    background-color: rgb(206, 123, 16);
+}
+.cross .line2{
+    opacity: 0;
+}
+.cross .line3{
+    -webkit-transform: rotate(45deg) translate(-5px,-5px);
+    transform: rotate(45deg) translate(-5px,-5px);
+    background-color: rgb(206, 123, 16);
+}
+@keyframes linksFade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------Media querys--------------------------------------------------*/
+
+@media screen and (min-width: 380px) {
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Contact.html-----------------------------------------------------*/
+    .formBox{
+        width: 300px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Sandra.html-----------------------------------------------------*/
+    #graphBox{
+        width: 350px;
+    }
+    #sandraFotoInfo{
+        width: 80%;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Portfolio.html-----------------------------------------------------*/
+    #portfolioHeadInfo h1{
+        font-size: 35px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Jonas.html-----------------------------------------------------*/
+    .center {
+        width: 350px;
+    }
+
+    .profileWindow{
+        width: 80%;
+        flex-direction: row-reverse;
+        height: 300px;
+    }
+    .profileWindow img {
+        width: 150px;
+        height: 200px;
+    }
+    
+    #jonasFooter{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Index.html-----------------------------------------------------*/
+    #indexHeadtext{
+        font-size: 50px;
+    }
+    #indexInfotext{
+        font-size: 35px;
+        padding-bottom: 15%;
+        padding-right: 9%;
+        padding-left: 9%;
+    }
+    #review{
+        align-self: flex-start;
+        margin-left: 10%;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    
+
+    /* -----------------------------------------------Index.html-----------------------------------------------------*/
+
+    #indexContainer{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #indexHeadtext{
+        font-size: 60px;
+    }
+    #indexInfotext{
+        font-size: 45px;
+        padding-bottom: 15%;
+        padding-right: 9%;
+        padding-left: 9%;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /*-------------------------------------------Portfolio.html-----------------------------------------------------*/
+    #portfolioHeadInfo h1{
+        font-size: 45px;
+    }
+    .projectText {
+        width: 50%;
+    }
+    #slideShow1, #slideShow2{
+        width: 50%;
+    }
+    #projectinfo-1, #projectinfo-2{
+        flex-direction: row;
+    }
+    #projectinfo-1 h1, #projectinfo-2 h1{
+        font-size: 20px;
+    }
+    #projectinfo-1 p, #projectinfo-2 p{
+        font-size: 15px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /* ---------------------------------------------Jonas.html----------------------------------------------------- */
+    
+    .personalPageMain1{
+        display: none;
+    }
+    .personalPageMain2{
+        display: flex;
+    }
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+    /* ---------------------------------------------Sandra.html----------------------------------------------------- */
+    #personalPageMain{
+        flex-direction: column-reverse;
+        height: 100%;
+        left: 50px;
+        padding-top: 60px;
+    }
+    #nameSandra{
+        position: absolute;
+        top: 0;
+    }
+    #sandraFotoInfo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        width: 80%;
+        margin-bottom: 30px;
+        margin-top: 6%;
+    }
+    #foto{ 
+        
+        margin: 0px 30px 0px 50px;
+    }
+    #sandraInfoText{
+        margin: 0px 30px 0px 50px;
+        color: rgb(233, 230, 230);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    #graphBox{
+        display: flex;
+        flex-direction: row; 
+        padding: 0px;
+        width: 650px;
+        height: 300px;
+        background: transparent;
+        border-bottom: 1px solid #000;
+        border-left: 1px solid #000;
+        border-radius: 0%;
+        box-shadow: none;
+        margin-bottom: 50px;
+    }
+    #graphBox h1{
+        position: absolute;
+        top: -40px;
+    }
+    #language{
+        right: 10%;
+    }
+    .knowledgeBox{
+        position: relative;
+        margin: 0px;
+        flex: 1;
+        text-align: center;
+    }  
+    .graphBar{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        position: absolute;
+        padding:0px;
+        border:none;
+        width: 45px;
+        height: 100%;
+        bottom: 0px;
+        left: 27px;
+        box-shadow:none;
+        text-align: center;
+        background: transparent;
+
+    }
+    .knowledgeBox p{
+        margin: 0px;
+    }
+    .knowledgeBox p:nth-child(1){
+        position: absolute;
+        top: 305px;
+        left: 3px;
+        width: 100%;
+    }
+    .knowledgeBox p:nth-child(2){
+        position: absolute;
+        top: -15px;
+        left: 19%;
+        width: 100%;
+    }
+    .knowledgeBox p:nth-child(3){
+        position: absolute;
+        top: -15px;
+        left:-4%;
+        width: 100%;
+    }
+    #percentHTML{   
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: HTML2 1.5s ease-in forwards;
+    }
+    #percentCSS{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: CSS2 1.5s ease-in forwards;
+    }
+    #percentCsharp{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: Csharp2 1.5s ease-in forwards;
+    }
+    #percentJS{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: JS2 1s ease-in forwards;
+    }
+    #percentDB{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: DB2 1.5s ease-in forwards;
+    }
+    #percentSve{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: SVE2 1.5s ease-in forwards;
+    }
+    #percentEng{
+        border: 1px solid rgba(12, 22, 4, 0.815);
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background: linear-gradient(0deg, rgb(8, 6, 39), rgb(6, 160, 199));
+        animation: ENG2 1.5s ease-in forwards;
+    }
+    @keyframes HTML2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 46%;
+            
+        } 
+    }
+    @keyframes CSS2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 48%;
+        }
+    }
+    @keyframes Csharp2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 87%;
+        }
+    }
+    @keyframes JS2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 16%;
+        }
+    }
+    @keyframes DB2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 82%;
+        }
+    }
+    @keyframes SVE2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+    @keyframes ENG2{
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 90%;
+        }
+    } 
+    /*---------------------------------------------------------------------------------------------------------------*/
+
+
+    /* ---------------------------------------------Contact.html----------------------------------------------------- */
+    
+    .formBox{
+        float: right;
+        height: auto;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 10%;
+    }
+    .bg-image {
+        display: block;
+    }
+    .formBox > *{
+        margin-top: 10%;
+        padding: 3%;
+    }
+    .company-info{
+        flex-direction: column;
+        height: 50px;
+        
+        margin-left: 5%;
+        opacity: .5;
+        margin-bottom: 30px;
+    }
+    .company-info li{
+        display: block;
+            
+    }
+    #form{
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+    #formBox__messageInput
+    {  
+        height: 120px;
+    }
+    .formBox__control i {
+        right: -5px;
+        top: 20px;
+    }
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    
+    /*--------------------------------------------CSS för navbaren--------------------------------------------------- */
+    .topmenu{
+        position: relative;
+        background: none;
+        overflow: hidden;
+    }
+    .burger{
+        display: none;
+    }
+    .navflexcontainer{
+        background-color: transparent;
+        width: 100%;
+    }
+    .scrolled{
+        background-color: rgba(12, 12, 12, 0.897);
+    }
+    .menuoptions{
+        position: absolute;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 180px;  
+        background: transparent;
+        left: 150px;
+        top: 0px;
+    }
+    .menuoptions .links{
+        display: flex;
+        flex-direction: row;
+    }
+    .menuoptions li{
+        padding: 0px 10px;
+    }
+    .menuoptions a,.menuoptions i{
+        opacity: 1;
+    }
+    .bx{
+        line-height: 0;
+    }
+    .menuoptions .menuDrop .subMenu{
+        display: none;
+    }
+    .menuoptions .menuDrop:hover .subMenu{
+        background: rgba(12, 12, 12, 0.897);
+        display: block;
+    }
+    .menuoptions a:hover, .menuoptions .links .menuDrop:hover i{
+        color: rgb(233, 230, 230);
+    }
+    .menuoptions a::before {
+        content: "";
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 3px;
+        top: 24px;
+        left: 0;
+        background-color: rgb(129, 250, 73);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+    .menuoptions a:hover::before {
+        transform:scaleX(1);
+    }
+    
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+}
+@media screen and (min-width: 1300px) {
+    #projectinfo-1,#projectinfo-2{
+        padding: 10px 50px;
+    }
+    #projectinfo-1 h1, #projectinfo-2 h1{
+        font-size: 27px;
+    }
+    #projectinfo-1 p, #projectinfo-2 p{
+        font-size: 21px;
+    }
+    #indexHeadtext{
+        font-size: 70px;
+    }
+    #indexInfotext{
+        font-size: 55px;
+    }
+}
