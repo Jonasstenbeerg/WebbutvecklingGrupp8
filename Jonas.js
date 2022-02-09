@@ -4,14 +4,6 @@
 
 let results = [];
 const addResult = ()=>{
-    
-    // var email = document.getElementById("formbox__emailInput").value;
-    // var emailValidationResult = document.getElementById("formBox__emailValidationResult");
-    
-    // var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-    
-    // if(email.match(pattern))
-    // {
     let result = {
         name: document.getElementById('formbox__nameInput').value,
         telephonenr: document.getElementById('formbox__telephonenrInput').value,
@@ -93,27 +85,18 @@ const setSuccess = (input)=>{
 }
 const emailValidation = ()=>{
     
-    
     var email = document.getElementById("formbox__emailInput");
-    var emailValidationResult = document.getElementById("formBox__emailValidationResult");
-    
-    const formControll = email.parentElement;
 
     var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
-
-    // let input = []
+   
     if(email.value.match(pattern))
     {
         setSuccess(email);
-
     }
     else
     {
         setError(email,'MEN FEL!!!!');
-
     }
-    
-    // emailValidationResult.innerText = input;
 }
 const validateAll = ()=>{
     var name = document.getElementById("formbox__nameInput");
@@ -349,6 +332,21 @@ clearInterval(autoPictures);
 })
 }
 
+track.addEventListener('click', e => {
+    const hidden = document.querySelector('.carousel__nav');
+    console.log(hidden);
+    if(hidden===null)
+    {
+        console.log('show')
+        // showAllButtons();
+        
+    }
+    else
+    {
+        // hideAllButtons();
+        console.log('hide')
+    }
+})
 
 const showAllButtons = ()=>{
     
@@ -377,6 +375,7 @@ const hideAllButtons = ()=>{
     dotsContainer.classList.add('allDisapear');
 
 }
+
 
 /*-------------------------------------------------------------------------*/
 
