@@ -51,7 +51,7 @@ table {
     font-size: 25px;
     font-family: Comic Sans MS, cursive, sans-serif;
 } 
-#sandraFooter{
+#jonasFooter{
     font-size: 30px;
 }
 #name {
@@ -84,25 +84,20 @@ table {
     width: 50%;
 }
 .personalPageMain1{
-    
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 150vh;
+    height: 100%;
     font-family: sans-serif;
-    background: linear-gradient(0deg, #46599e, #000105);
+    background: linear-gradient(0deg, #46599ec9, #000105);
 }
 .personalPageMain1 > * {
     margin-top: 10px;
 }
-.photo {
-    position: absolute;
+.bg-photo {
+    background: url('Foton/giant-panda.jpg') center fixed no-repeat;
     background-size: cover;
-    height: 150%;
-    width: 100%;
-    opacity: .05;
-    /* transform: translateY(30%); */
     
 }
 .center {
@@ -204,7 +199,8 @@ animation-fill-mode: forwards;
     width: 100%;
     height: 150vh;
     font-family: sans-serif;
-    background: linear-gradient(0deg, #46599e, #000105);
+    background: linear-gradient(0deg, #46599ec9, #000105);
+
 }
 
 .personalPageMain2 > *{
@@ -807,12 +803,8 @@ border: 3px solid red;
     .profileWindow img {
     width: 150px;
     height: 200px;
+    }
     
-    }
-    .photo {
-    height: 825px;
-    transform: translateY(19%);
-    }
     #sandraFooter{
     margin: 0;
     margin-bottom: 10px;
@@ -869,14 +861,19 @@ border: 3px solid red;
             .personalPageMain2{
                 display: flex;
             }
+            .photo {
+                /* transform: translateY(61%); */
+            }
+            #footerHead{
+                font-size: 300px;
+            }
+
     
     }
     @media screen and (min-width: 1300px) {
 
         /* --------------Personlig sida-------------------- */
 
-        .photo{
-            width: 100%;
-        }
+        
         
     }
