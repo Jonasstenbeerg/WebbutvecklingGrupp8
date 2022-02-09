@@ -28,6 +28,17 @@ const addResult = ()=>{
     // emailValidationResult.innerText = null;
 }
 
+const clearName = ()=>{
+    const name = document.getElementById('formbox__nameInput');
+    const formControll = name.parentElement;
+    formControll.className = ('formBox__control');
+    
+}
+const clearTelephone = ()=>{
+const telefon = document.getElementById('formbox__telephonenrInput');
+telefon.parentElement.className = ('formBox__control');
+}
+
 const dlInputs = ()=>{
     
     const blob = new Blob([JSON.stringify(results)],{type: "octet-stream"});

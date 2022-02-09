@@ -32,21 +32,21 @@
         <h1 id="formbox__heading">Contact</h1>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__nameInput" placeholder="Name" /> 
+            <input type="text" id="formbox__nameInput" onkeydown="clearName()" placeholder="Name" /> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__nameValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__telephonenrInput" placeholder="TelephoneNumber" /> 
+            <input type="text" id="formbox__telephonenrInput" onkeydown="clearTelephone()" placeholder="TelephoneNumber" /> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__telephoneValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__emailInput" onkeydown="emailValidation()" placeholder="Email" autocomplete="autocomplete_off_randString"/>
+            <input type="text" id="formbox__emailInput" onchange="emailValidation()" onkeydown="emailValidation()" placeholder="Email"/>
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__emailValidationResult">error</small> 
