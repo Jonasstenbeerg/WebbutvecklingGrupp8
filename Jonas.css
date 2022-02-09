@@ -45,6 +45,10 @@ table {
 /*-------------------------------------------------------------------------*/
 
 /* -------------CSS för persnlig sida med horisontalt diagram------------- */
+.socialMedia-container {
+    align-items: center;
+    flex-direction: column;
+}
 #footerHead{
     margin-top: 80px;
     color: white;
@@ -53,6 +57,7 @@ table {
 } 
 #jonasFooter{
     font-size: 30px;
+    margin-top: 10px;
 }
 #name {
     font-size: 40px;
@@ -861,13 +866,7 @@ border: 3px solid red;
             .personalPageMain2{
                 display: flex;
             }
-            .photo {
-                /* transform: translateY(61%); */
-            }
-            #footerHead{
-                font-size: 300px;
-            }
-
+            
     
     }
     @media screen and (min-width: 1300px) {
