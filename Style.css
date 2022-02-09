@@ -322,7 +322,7 @@ input, select {
     display: block;
     height: 40px;
     font-size: 15px; 
-    font-family: Comic Sans MS, cursive, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     border-radius: 10%;
     opacity: .7;
     border: 0;
@@ -347,7 +347,7 @@ input, select {
     margin-top: 80px;
     color: white;
     font-size: 25px;
-    font-family: Comic Sans MS, cursive, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 } 
 .jonasFooter{
     font-size: 30px;
