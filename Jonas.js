@@ -592,17 +592,17 @@ const hideAllButtons2 = ()=>{
 
 track2.addEventListener('click', e => {
     var viewportWidth = window.innerWidth;
-    const hidden = document.querySelector('.carousel2__nav.allDisapear');
+    const hidden = document.querySelector('.carousel2__nav.allDisapear2');
     
     if ( viewportWidth < 768 ) {
         
     if(hidden===null)
     {
-        hideAllButtons();
+        hideAllButtons2();
     }
     else
     {
-        showAllButtons();
+        showAllButtons2();
     }
 }
 });
