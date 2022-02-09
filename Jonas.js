@@ -148,9 +148,9 @@ const validateAll = ()=>{
         });
         const svg = document.querySelector("path");
         
-        button.classList.add("animating");
+        button.classList.add("formBox__submit-animating");
         svg.classList.add("svg")
-        setTimeout(() => {  button.classList.remove("animating"); svg.classList.remove("svg"); }, 2000);
+        setTimeout(() => {  button.classList.remove("formBox__submit-animating"); svg.classList.remove("svg"); }, 2000);
     }
     else 
     {

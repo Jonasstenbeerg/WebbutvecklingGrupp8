@@ -848,7 +848,7 @@ input, select {
     border-radius: 10px;
 }
 
-.animating {
+.formBox__submit-animating {
     background-color: transparent;
     color: transparent;
     user-select: none;
@@ -866,7 +866,7 @@ input, select {
     animation: success 500ms;
     animation-fill-mode: forwards;
 }
-.formBox__buttons-style.animating::before {
+.formBox__buttons-style.formBox__submit-animating::before {
     display: block;
 }
 .svg {
