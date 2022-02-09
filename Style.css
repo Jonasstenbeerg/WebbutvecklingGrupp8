@@ -837,7 +837,7 @@ input, select {
 
 /*---------------------------------------------Contact.html--------------------------------------------------*/
 
-.btn{
+.formBox__buttons-style{
     position: relative;
     width: 80px;
     height: 40px;
@@ -856,7 +856,7 @@ input, select {
     border: 0;
 }
 
-.btn::before {
+.formBox__buttons-style::before {
     content: "";
     display: none;
     background-color: rgb(52, 104, 146);
@@ -866,7 +866,7 @@ input, select {
     animation: success 500ms;
     animation-fill-mode: forwards;
 }
-.btn.animating::before {
+.formBox__buttons-style.animating::before {
     display: block;
 }
 .svg {
@@ -886,7 +886,7 @@ input, select {
     top: 15%;
     left: 33%;
 }
-.btn.fail {
+.formBox__buttons-style.fail {
     background-color: red;
     animation:fail-shake .1s ease-in-out .1s infinite;
 }

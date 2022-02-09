@@ -138,7 +138,7 @@ const validateAll = ()=>{
         setError(email,'email får inte vara tomt')
     }
     var numberOffSucces = document.querySelectorAll('.formBox__control.success');
-    const button = document.querySelector(".btn");
+    const button = document.querySelector(".formBox__buttons-style");
     
     if(numberOffSucces.length===3)
     {
