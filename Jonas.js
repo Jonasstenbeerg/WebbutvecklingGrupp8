@@ -17,8 +17,8 @@ const addResult = ()=>{
         telephonenr: document.getElementById('formbox__telephonenrInput').value,
         email: document.getElementById('formbox__emailInput').value,
         Offert: document.getElementById('formbox__offertCheckbox').checked,
-        Rådgivning: document.getElementById('formbox__rådgivningCheckbox').checked,
         Tidsbokning: document.getElementById('formbox__tidsbokningCheckbox').checked,
+        Rådgivning: document.getElementById('formbox__rådgivningCheckbox').checked,
         Annat: document.getElementById('formbox__annatCheckbox').checked,
         message: document.getElementById('formBox__messageInput').value,
     }
