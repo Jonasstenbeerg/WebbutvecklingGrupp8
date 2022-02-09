@@ -1034,10 +1034,13 @@ transform: translateX(5%);
     height: 20px;
     padding: 0%;
 }
-.checkboxpos
+.formBox__checkboxpos
 {
     text-align: center;
     padding: 5px;
+}
+.formBox__checkboxpos > * {
+    color: white;
 }
 .checkboxpos p{
     text-align: center;
