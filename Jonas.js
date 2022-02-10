@@ -106,7 +106,7 @@ const validateAll = ()=>{
     var telephone = document.getElementById("formbox__telephonenrInput");
     var email = document.getElementById("formbox__emailInput");
 
-    var namePattern = /^((?!-)\w+[A-Za-zá-ý-]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*).*(?<!-)$/;
+    var namePattern = /^((?!-)[A-Öa-zá-ý-]+([ ]?[a-z]?['-]?[A-Z][a-z]+)*).*(?<!-)$/;
     
     var numberPattern = /^\d+\.?\d*$/;
     if(name.value.trim()==='')
