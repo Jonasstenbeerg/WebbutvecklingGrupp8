@@ -20,7 +20,7 @@ const addResult = ()=>{
 
     // //Spara till local storage
     localStorage.setItem('formResult', JSON.stringify(results) );
-    // emailValidationResult.innerText = null;
+   
 }
 
 const clearName = ()=>{
