@@ -333,6 +333,24 @@ stopButton.addEventListener('click', e => {
 
 clearInterval(autoPictures);
 })
+
+track.addEventListener('click', e => {
+    var viewportWidth = window.innerWidth;
+    const hidden = document.querySelector('.carousel__nav.allDisapear');
+    
+    if ( viewportWidth < 768 ) {
+        
+    if(hidden===null)
+    {
+        hideAllButtons();
+    }
+    else
+    {
+        showAllButtons();
+    }
+}
+});
+
 }
 
 
@@ -367,22 +385,7 @@ const hideAllButtons = ()=>{
 }
     
 
-track.addEventListener('click', e => {
-    var viewportWidth = window.innerWidth;
-    const hidden = document.querySelector('.carousel__nav.allDisapear');
-    
-    if ( viewportWidth < 768 ) {
-        
-    if(hidden===null)
-    {
-        hideAllButtons();
-    }
-    else
-    {
-        showAllButtons();
-    }
-}
-});
+
     
     
 
@@ -559,6 +562,24 @@ stopButton.addEventListener('click', e => {
 
 clearInterval(autoPictures2);
 })
+
+track2.addEventListener('click', e => {
+    var viewportWidth = window.innerWidth;
+    const hidden = document.querySelector('.carousel2__nav.allDisapear2');
+    
+    if ( viewportWidth < 768 ) {
+        
+    if(hidden===null)
+    {
+        hideAllButtons2();
+    }
+    else
+    {
+        showAllButtons2();
+    }
+}
+});
+
 }
 
 
@@ -590,22 +611,7 @@ const hideAllButtons2 = ()=>{
 
 }
 
-track2.addEventListener('click', e => {
-    var viewportWidth = window.innerWidth;
-    const hidden = document.querySelector('.carousel2__nav.allDisapear2');
-    
-    if ( viewportWidth < 768 ) {
-        
-    if(hidden===null)
-    {
-        hideAllButtons2();
-    }
-    else
-    {
-        showAllButtons2();
-    }
-}
-});
+
 /*-------------------------------------------------------------------------*/
 
 /* -----------------------JS för personlig sida-------------------------------- */
