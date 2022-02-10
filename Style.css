@@ -1524,13 +1524,13 @@ transform: translateX(5%);
         height: auto;
         padding-left: 3%;
         padding-right: 3%;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .bg-image {
         display: block;
     }
     .formBox > *{
-        margin-top: 10%;
+        margin-top: 5%;
         padding: 3%;
     }
     .company-info{
