@@ -341,6 +341,7 @@ input, select {
 /* -------------CSS för persnlig sida med horisontalt diagram------------- */
 .socialMedia-container {
     text-align: center;
+    transform: translateY(-50%);
 }
 .footerHeadjonas{
     margin-top: 80px;
@@ -1226,8 +1227,8 @@ transform: translateX(5%);
         align-items: center;
         padding: 20px;
         width: 80%;
-        margin-bottom: 30px;
-        margin-top: 6%;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
     #jonasFoto{ 
         
