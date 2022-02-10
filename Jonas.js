@@ -98,7 +98,7 @@ const emailValidation = ()=>{
     }
     else
     {
-        setError(email,'MEN FEL!!!!');
+        setError(email,'Felaktigt värde');
     }
 }
 const validateAll = ()=>{
