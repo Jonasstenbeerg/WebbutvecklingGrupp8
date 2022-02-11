@@ -384,6 +384,7 @@ input, select {
     width: 100%;
     height: 100vh;
     background: linear-gradient(0deg, #46599ec9, #000105);
+    background-size: cover;
 }
 .personalPageMain-jonas{
     display: flex;
