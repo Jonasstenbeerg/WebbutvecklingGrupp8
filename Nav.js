@@ -29,7 +29,7 @@ document.getElementById('navmenu').innerHTML = html
 const navDrop = () => {
     const burger = document.querySelector('.burger');
     const menuOptions = document.querySelector('.menuoptions')
-    const links = document.querySelectorAll('.menuoptions a,i,li');
+    const links = document.querySelectorAll('.menuoptions a,i');
     const menuDrop = document.querySelector('.subMenu')
 
     burger.addEventListener('click',() => {
