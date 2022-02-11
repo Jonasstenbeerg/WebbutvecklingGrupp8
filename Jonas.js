@@ -23,34 +23,28 @@ const addResult = ()=>{
    
 }
 
-const clearName = ()=>{
-    const name = document.getElementById('formbox__nameInput');
-    const formControll = name.parentElement;
-    formControll.className = ('formBox__control');
-    
-}
-const clearTelephone = ()=>{
+
+    //
+    const nameInput = document.getElementById('formbox__nameInput');
+    if(nameInput) {
+        nameInput.addEventListener('input',function(){
+            
+            nameInput.parentElement.className = ('formBox__control');
+
+        })
+    }
+
+
 const telefon = document.getElementById('formbox__telephonenrInput');
-telefon.parentElement.className = ('formBox__control');
+if(telefon) {
+    telefon.addEventListener('input',function(){
+
+        telefon.parentElement.className = ('formBox__control');
+
+    })
 }
 
-const dlInputs = ()=>{
-    
-    const blob = new Blob([JSON.stringify(results)],{type: "octet-stream"});
 
-    const href = URL.createObjectURL(blob);
-
-    const a = Object.assign(document.createElement("a"),{
-        href,
-        style: "display:none",
-        download: "Inputs.json"
-    });
-    document.body.appendChild(a)
-
-    a.click();
-    URL.revokeObjectURL(href);
-    a.remove();
-}
 var button = document.querySelector('.button__download');
 var symbol = document.querySelector('.fa-download');
 if(button){
@@ -66,6 +60,21 @@ if(button){
         }, 2000);
         symbol.classList.remove('inactive');
         button.classList.remove('inactive');
+
+        const blob = new Blob([JSON.stringify(results)],{type: "octet-stream"});
+        const href = URL.createObjectURL(blob);
+        
+        const a = Object.assign(document.createElement("a"),{
+            href,
+            style: "display:none",
+            download: "Inputs.json"
+        });
+        
+        document.body.appendChild(a)
+
+        a.click();
+        URL.revokeObjectURL(href);
+        a.remove();
 
     });
     
@@ -86,22 +95,32 @@ const setSuccess = (input)=>{
 
     formControll.className = 'formBox__control success';
 }
-const emailValidation = ()=>{
-    
-    var email = document.getElementById("formbox__emailInput");
 
-    var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+
+    const emailInput = document.getElementById("formbox__emailInput");
+        if(emailInput){
+            emailInput.addEventListener('input', function(){
+
+                var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
    
-    if(email.value.match(pattern))
-    {
-        setSuccess(email);
-    }
-    else
-    {
-        setError(email,'Felaktigt värde');
-    }
-}
-const validateAll = ()=>{
+                if(emailInput.value.match(pattern))
+                {
+                    setSuccess(emailInput);
+                }
+                else
+                {
+                    setError(emailInput,'Felaktigt värde');
+                }
+
+            })
+        }
+        
+        
+
+const submitButton = document.querySelector(".formBox__buttons-style");
+if(submitButton) {
+
+    submitButton.addEventListener('click',function(){
     var name = document.getElementById("formbox__nameInput");
     var telephone = document.getElementById("formbox__telephonenrInput");
     var email = document.getElementById("formbox__emailInput");
@@ -157,6 +176,7 @@ const validateAll = ()=>{
         button.classList.add("fail");
         setTimeout(() => {  button.classList.remove("fail"); }, 700);
     }
+});
 }
 
 
