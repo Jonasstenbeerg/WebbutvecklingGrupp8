@@ -31,9 +31,6 @@ const percentCounter = (counterClass) => {
     });
 }
 
-if(skillBar===null) {}
-else
-{
 
 skillBar.addEventListener('animationstart', () => {
     
@@ -48,5 +45,5 @@ else
   });
 
 
-}
+
 
