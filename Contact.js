@@ -20,30 +20,30 @@ const addResult = ()=>{
 }
 
 
-    //
+
     const nameInput = document.getElementById('formbox__nameInput');
-    if(nameInput) {
+    
         nameInput.addEventListener('input',function(){
             
             nameInput.parentElement.className = ('formBox__control');
 
         })
-    }
+    
 
 
 const telefon = document.getElementById('formbox__telephonenrInput');
-if(telefon) {
+
     telefon.addEventListener('input',function(){
 
         telefon.parentElement.className = ('formBox__control');
 
     })
-}
+
 
 
 var button = document.querySelector('.button__download');
 var symbol = document.querySelector('.fa-download');
-if(button){
+
 
     button.addEventListener('click',function() {
         symbol.classList.add('active');
@@ -73,8 +73,7 @@ if(button){
         a.remove();
 
     });
-    
-};
+
 
 const setError = (input, message)=>{
 
@@ -94,7 +93,7 @@ const setSuccess = (input)=>{
 
 
     const emailInput = document.getElementById("formbox__emailInput");
-        if(emailInput){
+        
             emailInput.addEventListener('input', function(){
 
                 var pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
@@ -109,12 +108,12 @@ const setSuccess = (input)=>{
                 }
 
             })
-        }
+        
         
         
 
 const submitButton = document.querySelector(".formBox__buttons-style");
-if(submitButton) {
+
 
     submitButton.addEventListener('click',function(){
     var name = document.getElementById("formbox__nameInput");
@@ -173,5 +172,5 @@ if(submitButton) {
         setTimeout(() => {  button.classList.remove("fail"); }, 700);
     }
 });
-}
+
 
