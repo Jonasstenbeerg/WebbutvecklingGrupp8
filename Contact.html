@@ -19,7 +19,7 @@
     <form id="form">
     
     <div class="company-info">
-        <i id="company-info__heading">Company Info</i>
+        <i id="company-info__heading">Företags Info</i>
          <ul>
             <li><i class="fa fa-road"></i> Adress</li>
             <li><i class="fa fa-phone"></i> Phone</li>
@@ -28,24 +28,24 @@
     </div>
     <div class="formBox boxstyle">
         
-        <h1 id="formbox__heading">Contact</h1>
+        <h1 id="formbox__heading">Kontakt</h1>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__nameInput" placeholder="*Name" /> 
+            <input type="text" id="formbox__nameInput" placeholder="*Namn" autocomplete="random-string"/> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__nameValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__telephonenrInput" placeholder="*Telephone number" /> 
+            <input type="text" id="formbox__telephonenrInput" placeholder="*Telefonnummer" autocomplete="random-string"/> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__telephoneValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__emailInput" placeholder="*Email"/>
+            <input type="text" id="formbox__emailInput" placeholder="*Email" autocomplete="random-string"/>
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__emailValidationResult">error</small> 
@@ -62,7 +62,7 @@
             <label for="formbox__annatCheckbox">Annat</label>
             <input type="checkbox" name="formbox__annatCheckbox" id="formbox__annatCheckbox">
         </div>
-        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here (Optional)"></textarea>
+        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Meddelande här (frivilligt)"></textarea>
         
         <span class="formBox__buttons">
             <button type="button" class="formBox__buttons-style">Submit
@@ -72,7 +72,7 @@
                     </svg>
                 </i>
             </button>
-            <button class="button__download formBox__buttons-style" type="button"><i class="fa fa-download"></i><span>Download Inputs</span></button>
+            <button class="button__download formBox__buttons-style" type="button"><i class="fa fa-download"></i><span>Hämta Inputs</span></button>
         </span>
     
     </div> 
