@@ -31,21 +31,21 @@
         <h1 id="formbox__heading">Contact</h1>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__nameInput" onkeydown="clearName()" placeholder="Name" /> 
+            <input type="text" id="formbox__nameInput" placeholder="*Name" /> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__nameValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__telephonenrInput" onkeydown="clearTelephone()" placeholder="TelephoneNumber" /> 
+            <input type="text" id="formbox__telephonenrInput" placeholder="*Telephone number" /> 
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__telephoneValidationResult">error</small> 
         </div>
         
         <div class="formBox__control">
-            <input type="text" id="formbox__emailInput" oninput="emailValidation()" onkeydown="emailValidation()" placeholder="Email"/>
+            <input type="text" id="formbox__emailInput" placeholder="*Email"/>
             <i class="fa fa-check-circle"></i>
             <i class="fa fa-exclamation-circle"></i>
             <small id="formBox__emailValidationResult">error</small> 
@@ -62,17 +62,17 @@
             <label for="formbox__annatCheckbox">Annat</label>
             <input type="checkbox" name="formbox__annatCheckbox" id="formbox__annatCheckbox">
         </div>
-        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here"></textarea>
+        <textarea name="message" id="formBox__messageInput" cols="30" rows="10" placeholder="Message here (Optional)"></textarea>
         
         <span class="formBox__buttons">
-            <button type="button" class="formBox__buttons-style" onclick="validateAll()">Submit
+            <button type="button" class="formBox__buttons-style">Submit
                 <i class="checkmark-container">
                     <svg x="0px" y="0px" fill="none" stroke="white" visibility="hidden" viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
                         <path class="check st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
                     </svg>
                 </i>
             </button>
-            <button class="button__download formBox__buttons-style" type="button" onclick="dlInputs();"><i class="fa fa-download"></i><span>Download Inputs</span></button>
+            <button class="button__download formBox__buttons-style" type="button"><i class="fa fa-download"></i><span>Download Inputs</span></button>
         </span>
     
     </div> 

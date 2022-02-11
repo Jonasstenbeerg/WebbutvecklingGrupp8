@@ -338,7 +338,6 @@ input, select {
 
 /*-----------------------------------------------Jonas.html---------------------------------------------------*/
 
-/* -------------CSS för persnlig sida med horisontalt diagram------------- */
 .socialMedia-container {
     text-align: center;
     transform: translateY(-50%);
@@ -480,15 +479,15 @@ input, select {
 }
 @keyframes html1 {
     from{width: 0%;}
-    to{width: 80%;}
+    to{width: 55%;}
 }
 @keyframes css1 {
     from{width: 0%;}
-    to{width: 84%;}
+    to{width: 45%;}
 }
 @keyframes javaScript1 {
     from{width: 0%;}
-    to{width: 95%;}
+    to{width: 60%;}
 }
 @keyframes pingis1 {
     from{width: 0%;}
@@ -1339,15 +1338,15 @@ transform: translateX(5%);
     }
     @keyframes html2 {
         from{height: 0%;}
-        to{height: 80%;}
+        to{height: 55%;}
     }
     @keyframes css2 {
         from{height: 0%;}
-        to{height: 84%;}
+        to{height: 45%;}
     }
     @keyframes javaScript2 {
         from{height: 0%;}
-        to{height: 95%;}
+        to{height: 60%;}
     }
     @keyframes pingis2 {
         from{height: 0%;}
