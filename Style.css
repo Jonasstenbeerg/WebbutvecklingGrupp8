@@ -497,7 +497,7 @@ input, select {
 
 
 /*-----------------------------------------------Sandra.html---------------------------------------------------*/
-#personalPageMain{
+#personalPageMain-sandra{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1357,7 +1357,7 @@ transform: translateX(5%);
 
 
     /* ---------------------------------------------Sandra.html----------------------------------------------------- */
-    #personalPageMain{
+    #personalPageMain-sandra{
         flex-direction: column-reverse;
         height: 100%;
         left: 50px;
